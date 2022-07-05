@@ -1,0 +1,36 @@
+.content{
+    margin: 0 auto;
+    max-width : 1000px;
+}
+
+img {
+    width: 200px;
+    max-width: 100%;
+    display: block;
+}
+
+.examples {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.video-block {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 15px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-block iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+    border-top: 2px solid;
+    padding-top: 25px;
+}
