@@ -1,0 +1,295 @@
+/* reset css */
+
+html, body, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+	line-height: 1;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav, ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+/* end reset css */
+
+/* my styles  */
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/open-sans.woff");
+    font-style: normal;
+}
+
+body {
+    font-family: "Open Sans";
+    color: #070707;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 970px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 25px 15px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #828282;
+    transition: all 0.3s ease;
+}
+
+nav .active, 
+nav a:hover {
+    color: #070707;
+}
+
+.name {
+    padding-top: 12px;
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+}
+
+.about-me,
+.skills,
+.portfolio,
+.contacts {
+    padding: 100px 0;
+}
+
+.about-me,
+.portfolio {
+    background: #F6F6F6;
+}
+
+.title {
+    padding: 0 15px 50px 15px;
+    font-weight: 700px;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.title .subtitle {
+    display: block;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.article-content {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.block {
+    display: block;
+}
+
+.width480 {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.width400 {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.width320 {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.skills-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills-item {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    max-width: 170px;
+}
+
+.skills-item .icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    align-self: center;
+}
+
+.skills-item .rating {
+    width: unset;
+}
+
+.skills-item-title {
+    margin: 0 auto;
+    padding: 25px 0 60px 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #828282;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+}
+
+.star-activ {
+    width: 26px;
+    height: 26px;
+    background-image: url('../img/star-icon-activ.svg');
+}
+
+.star-inactiv {
+    width: 26px;
+    height: 26px;
+    background-image: url('../img/star-icon-inactiv.svg');
+}
+
+.portfolio-block {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    justify-content: inherit;
+}
+
+.portfolio-link {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.portfolio-item a {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration-line: underline;
+    color: #070707;
+    transition: all 0.3s ease;
+}
+
+.portfolio-item a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contacts-block {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: inherit;
+    align-items: center;
+}
+
+.subtitle .block {
+    line-height: 25px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 0 15px 0 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.send-message {
+    text-align: center;
+}
+
+.send-message-button {
+    height: 44px;
+    padding: 0 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    background: #070707;
+    border-radius: 22px;
+    transition: all 0.5s ease;
+}
+
+.send-message-button:hover {
+    background: #FFFFFF;
+    color: #070707;
+}
+
+.text {
+    padding: 0 15px;
+    width: 100%;
+    max-width: 230px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #828282;
+}
