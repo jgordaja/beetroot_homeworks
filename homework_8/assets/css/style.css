@@ -12,7 +12,7 @@ html, body {
 	line-height: 1;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
@@ -27,7 +27,7 @@ img {
     width: 100%;
 }
 
-input, button, textarea {
+input, button, textarea, a {
     font-family: inherit;
 }
 
@@ -57,16 +57,16 @@ body {
     box-sizing: border-box;
 }
 
-nav {
+.menu ul {
     display: flex;
     justify-content: center;
     padding: 25px 15px;
-    gap: 40px;
+    gap: 15px 40px;
     flex-wrap: wrap;
+    border-bottom: 2px solid #828282;
 }
 
-nav a {
-    font-family: 'Open Sans';
+.menu ul a {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
@@ -75,8 +75,8 @@ nav a {
     transition: all 0.3s ease;
 }
 
-nav .active, 
-nav a:hover {
+.menu .active, 
+.menu a:hover {
     color: #070707;
 }
 
@@ -149,6 +149,8 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* add */
+    gap: 15px;
 }
 
 .skills-item {
@@ -157,7 +159,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: inherit;
     text-align: center;
-    padding: 15px;
+    /* padding: 15px; */ 
     width: 100%;
     max-width: 170px;
 }
@@ -167,10 +169,6 @@ nav a:hover {
     width: 80px;
     height: 80px;
     align-self: center;
-}
-
-.skills-item .rating {
-    width: unset;
 }
 
 .skills-item-title {
@@ -213,7 +211,7 @@ nav a:hover {
     text-align: center;
 }
 
-.portfolio-item a {
+.portfolio-item .link {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
@@ -222,14 +220,17 @@ nav a:hover {
     transition: all 0.3s ease;
 }
 
-.portfolio-item a:hover {
+.portfolio-item .link:hover {
     text-decoration: none;
+}
+
+.contacts {
+    padding-bottom: 0;
 }
 
 .contacts-block {
     display: flex;
     flex-direction: column;
-    gap: 60px;
     justify-content: inherit;
     align-items: center;
 }
@@ -243,7 +244,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: space-around;
     gap: 30px;
-    padding: 0 15px 0 15px;
+    padding: 0 15px 50px 15px;
 }
 
 .social-icons {
