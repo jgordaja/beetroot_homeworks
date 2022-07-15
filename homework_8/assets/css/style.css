@@ -82,7 +82,7 @@ body {
 
 .name {
     padding-top: 12px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 48px;
     line-height: 65px;
@@ -117,9 +117,6 @@ body {
 
 .article-content {
     padding: 0 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
     text-align: center;
 }
 
@@ -127,53 +124,51 @@ body {
     display: block;
 }
 
-.width480 {
+.about-text {
     width: 100%;
+    margin: 0 auto 30px auto;
+}
+
+.about-text:last-of-type {
+    margin: 0 auto;
+}
+
+.about-text:nth-of-type(1) {
     max-width: 480px;
-    margin: 0 auto;
 }
 
-.width400 {
-    width: 100%;
+.about-text:nth-of-type(2) {
     max-width: 400px;
-    margin: 0 auto;
 }
 
-.width320 {
-    width: 100%;
+.about-text:nth-of-type(3) {
     max-width: 320px;
-    margin: 0 auto;
 }
 
 .skills-block {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* add */
     gap: 15px;
 }
 
 .skills-item {
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: inherit;
+    justify-content: space-between;
     text-align: center;
-    /* padding: 15px; */ 
     width: 100%;
     max-width: 170px;
 }
 
-.skills-item .icon {
-    display: block;
-    width: 80px;
-    height: 80px;
+.skill-icon {
     align-self: center;
+    padding-bottom: 25px;
 }
 
 .skills-item-title {
     margin: 0 auto;
-    padding: 25px 0 60px 0;
+    padding-bottom: 60px;
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
@@ -184,26 +179,26 @@ body {
 
 .stars {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.star {
+    width: 26px;
+    height: 26px;
 }
 
 .star-activ {
-    width: 26px;
-    height: 26px;
     background-image: url('../img/star-icon-activ.svg');
 }
 
 .star-inactiv {
-    width: 26px;
-    height: 26px;
     background-image: url('../img/star-icon-inactiv.svg');
 }
 
-.portfolio-block {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-    justify-content: inherit;
+.portfolio-item:not(.portfolio-item:last-of-type) {
+    margin-bottom: 70px;
 }
 
 .portfolio-link {
@@ -226,13 +221,11 @@ body {
 
 .contacts {
     padding-bottom: 0;
+    text-align: center;
 }
 
-.contacts-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: inherit;
-    align-items: center;
+.contacts .title {
+    padding-bottom: 60px;
 }
 
 .subtitle .block {
@@ -240,17 +233,13 @@ body {
 }
 
 .social {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 30px;
-    padding: 0 15px 50px 15px;
+    padding: 0 15px 60px 15px;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 15px 50px;
     flex-wrap: wrap;
 }
 
@@ -266,6 +255,7 @@ body {
 .send-message-button {
     height: 44px;
     padding: 0 16px;
+    margin-bottom: 30px;
     font-weight: 700;
     font-size: 18px;
     line-height: 25px;
@@ -283,6 +273,7 @@ body {
 }
 
 .text {
+    margin: 0 auto;
     padding: 0 15px;
     width: 100%;
     max-width: 230px;
@@ -290,6 +281,5 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    text-align: center;
     color: #828282;
 }
