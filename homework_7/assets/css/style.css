@@ -1,0 +1,338 @@
+/* reset css */
+
+html, body, p, h1, h2, h3, h4, h5, h6,
+input {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+	line-height: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* end reset css */
+
+/* my styles  */
+
+body, input, select {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #545454;
+    background: #E5E5E5;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+input[type=radio], select, button, .radio {
+    cursor: pointer;
+}
+
+.modal_create-account,
+.modal_profile {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal_container {
+    padding: 35px 35px 15px 35px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    max-width: 570px;
+    width: 100%; 
+    -webkit-box-shadow: 6px 7px 15px 1px rgba(0,0,0,0.72); 
+    box-shadow: 6px 7px 15px 1px rgba(0,0,0,0.72);
+}
+
+.modal_profile .modal_container {
+    padding-bottom: 95px;
+}
+
+.modal_header .title {
+    color: #1C1C1C;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 20px;
+}
+
+.form_control {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1 1 0%;
+}
+
+.form-label {
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+    padding-bottom: 7px;
+}
+
+.form-input {
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    padding: 7px 38px 7px 10px;
+    width: 100%;
+    line-height: 24px;
+}
+
+.form-input:focus {
+    outline: none;
+    border: 1px solid #007BFF;
+}
+
+.radio {
+    position: relative;
+    padding-left: 30px;
+}
+
+input[type=radio] {
+    position: absolute;
+    opacity: 0;
+}
+
+.radiobtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 50%;
+}
+
+.radiobtn:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.gender:checked + .radiobtn {
+    position: absolute;
+    background-color: #2196F3;
+}
+
+.gender:checked + .radiobtn::after {
+    display: block;
+    top: 7px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Chrome */
+    -webkit-appearance: none;
+  }
+  
+  /* For IE10 */
+  select::-ms-expand {
+    display: none;
+  }
+
+.form-select {
+    height: 40px;
+    background-image: url("../img/arrow-double.svg");
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: 95% center;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #969696;
+    padding-top: 7px;
+}
+
+.inline-block {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.submit-button {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #FFFFFF;
+    background: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 22px;
+}
+
+.confirm-text {
+    text-align: center;
+    max-width: 395px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    padding-top: 0;
+}
+
+.link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #007BFF;
+}
+
+.log-in-block {
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+    border-top: 1px solid #E4E4E4;
+    text-align: center;
+}
+
+.log-in-link {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.1px;
+    color: #007BFF;
+} 
+
+.avatar-form_control {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.avatar-photo {
+    width: 80px;
+    height: 80px; 
+    margin-right: 20px;
+}
+
+.avatar-photo img {
+    border-radius: 50%;
+}
+
+input#avatar {
+    width: 138px;
+    border-radius: 6px;
+}
+
+input#avatar::-webkit-file-upload-button { 
+    visibility: hidden; 
+}
+
+#avatar::before {
+    content: url("../../assets/img/camera.svg");
+    display: inline-block;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px; 
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer; 
+    width: 138px;
+    height: 30px;
+    box-sizing: border-box;
+    text-align: right;
+    padding: 7px;
+  }
+
+  #avatar:hover::before {
+    border-color: #007BFF;
+  }
+
+  #avatar:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+  } 
+
+.upload-file { 
+    margin-right: 10px;
+    margin-top: 12px;
+}
+
+.upload-text {
+    display: block;
+    padding-top: 9px;
+}
+
+.delete-button button {
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    margin-top: 12px;
+}
+
+.delete-button button:hover {
+    border-color: #007BFF;
+}
+
+.update-button {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #FFFFFF;
+    background: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    padding: 8px; 
+    max-width: 150px;
+    width: 100%;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="modal_profile">
+        <div class="modal_container">
+            <div class="modal_header">
+                <h2 class="title">
+                    Profile
+                </h2>
+            </div>
+            <div class="modal_content">
+                <form action="#" method="POST" class="form_create-account">
+                    <div class="avatar-form_control">
+                        <div class="avatar-photo">
+                            <img src="../assets/img/avatar2.jpg" alt="avatar">
+                        </div> 
+                        <div class="upload-file"> 
+                            <div> 
+                                <input type="file" id="avatar" name="avatar" accept=".jpg, .jpeg, .png">
+                            </div> 
+                            <span class="text upload-text">Up to 1 MB (300x300 px)</span>
+                        </div>
+                        <div class="delete-button">
+                            <button>
+                                <img src="../assets/img/trash.svg" alt="delete button">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form_control flex">
+                        <div class="column">
+                            <label class="form-label" for="name">
+                                Name
+                            </label>
+                            <input type="text" class="form-input" name="name" id="name" required>
+                        </div>
+                        <div class="column">
+                            <label class="form-label" for="email">
+                                E-mail
+                            </label>
+                            <input  type="email" class="form-input" name="email" id="email" required>
+                        </div>
+                    </div>            
+                    <div class="form_control flex">
+                        <div class="column">
+                            <label class="form-label" for="country">
+                                Country
+                            </label>
+                            <select class="form-input form-select" name="country" id="country">
+                                <option value=""></option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="Poland">Poland</option>
+                            </select>
+                        </div>
+                        <div class="column">
+                            <label class="form-label" for="city">
+                                City
+                            </label>
+                            <input type="text" class="form-input" name="city" id="city">
+                        </div>
+                    </div>
+                    <div class="form_control flex">
+                        <div class="column">
+                            <label class="form-label" for="zipCode">
+                                Zip Code
+                            </label>
+                            <input type="text" class="form-input" name="zipCode" id="zipCode">
+                        </div>
+                        <div class="column">
+                            <label class="form-label" for="phoneNumber">
+                                Phone Number
+                            </label>
+                            <input  type="tel" class="form-input" name="phoneNumber" id="phoneNumber" minlength="10" maxlength="13">
+                        </div>
+                    </div>   
+                    <button type="submit" class="update-button">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
