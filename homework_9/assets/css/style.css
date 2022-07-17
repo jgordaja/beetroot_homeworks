@@ -1,0 +1,160 @@
+/* reset css */
+
+html, body, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+	line-height: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* end reset css */
+
+/* my styles  */
+
+body {
+    font-family: "Roboto";
+    color: #070707;
+    background: #3B3F45;
+}
+
+.header {
+    margin:  0 auto;
+    text-align: center;
+    color: #FF8984;
+    background: #4A4F56;
+}
+
+.header-block {
+    padding-top: 19px;
+    padding-bottom: 12px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 4px;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.container {
+    width: 100%;
+    max-width: 534px;
+    margin: 0 auto;
+}
+
+.shopping-list {
+    margin: 20px auto 45px auto;
+}
+
+.shopping-list-item {
+    position: relative;
+}
+
+input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+label {
+    display: inline-block;
+    width: 534px;
+    line-height: 45px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.checkbox-custom::before {
+    content: '';
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-right: 16px;
+    margin-left: 12px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+* {
+    transition: all .1s ease-in;
+}
+
+input[type=checkbox]:checked + label>.checkbox-custom::before {
+    background-color: #ffffff;
+    background-image: url("../img/ckeck.svg");
+}
+
+input[type=checkbox]:checked + label {
+    text-decoration: line-through;
+    color: #9B96AC;
+}
+
+.shopping-list-item:hover {
+    background: #625E77;
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.shopping-list-item:nth-child(odd) {
+    background: #88839E;
+}
+
+.shopping-list-item:nth-child(even) {
+    background: #7A7593;
+}
+
+label:active {
+    background: #FF8984;
+}
+
+.small {
+    position: relative;
+    font-size: 11px;
+    line-height: 13px;
+    padding-left: 10px;
+}
+
+.small::before {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    content: '(';
+}
+
+.small::after {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    content: ')';
+}
+
+.wishes {
+    margin-top: 45px;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    background: #4A4F56;
+}
