@@ -1,0 +1,139 @@
+/* reset css */
+
+html, body, p, h2 {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+	line-height: 1;
+} 
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* end reset css */
+
+/* my styles */
+
+body, html {
+    color: #000000;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%; 
+} 
+
+.lang {
+    display: inline-block; 
+    margin-right: 50px;
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px; 
+    letter-spacing: 0.04em; 
+    text-transform: uppercase; 
+}
+
+.menu {
+    display: inline-block; 
+}
+
+.menu ul{ 
+    display: flex; 
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px; 
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+} 
+
+.menu ul li:not(.menu ul li:last-child)::after {
+    content: '/';
+    top: 0;
+    right: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.chapter {
+    margin-top: 70px;
+}
+
+.chapter:last-child {
+    padding-bottom: 90px;
+}
+
+.title {
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px; 
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+} 
+
+.suptitle {
+    font-family: 'Farro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+}
+
+.paragraph {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.paragraph:not(.paragraph:last-of-type) {
+    margin-bottom: 40px;
+}
+
+.italic-fragment {
+    font-family: 'PT Sans';
+    font-style: italic;
+    font-weight: 400; 
+}
+
+.bold-fragment {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700; 
+}
+
+.underline-fragment {
+    text-decoration-line: underline;
+}
+
+mark.gray {
+    background-color: rgb(166, 160, 160);
+}
