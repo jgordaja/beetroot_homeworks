@@ -107,7 +107,8 @@ body, html {
     vertical-align: 70%;
 }
 
-.paragraph {
+.paragraph, 
+.gray {
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
@@ -135,6 +136,6 @@ body, html {
     text-decoration-line: underline;
 }
 
-mark.gray {
+.gray {
     background-color: rgb(166, 160, 160);
 }
