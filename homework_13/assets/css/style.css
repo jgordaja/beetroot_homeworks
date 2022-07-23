@@ -118,24 +118,15 @@ body, html {
     position: sticky;
     position: -webkit-sticky;
     top: 150px;
+    left: 150px;
     height: 100%;
 }
 
-.main-content {
-
-}
-
-.backgound-image {
-    position: absolute;
-    top: 0px;
-    right: -252px;
+.background-image {
+    position: fixed;
+    top: 150px;
+    right: 0;
     z-index: -1;
-}
-
-.backgound-image img {
-    /* position: sticky;
-    top: 0px;
-    right: 0px; */
 }
 
 .chapter {
