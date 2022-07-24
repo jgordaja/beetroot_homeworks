@@ -43,6 +43,20 @@ a {
     margin-right: 12px;
 }
 
+.logo path {
+    fill: #3DB370;
+    stroke: #3DB370;
+}
+
+.logo-box:hover .logo-text{
+    font-weight: 700;
+}
+
+.logo-box:hover .logo path{
+    fill: #12773e;
+    stroke: #12773e;
+}
+
 .logo-text {
     font-family: 'Quicksand', sans-serif;
     font-style: normal;
@@ -95,34 +109,72 @@ a {
     background: #FFFFFF;
     border: 1px solid #E5EAF4;
     border-radius: 8px;
-    max-width: 368px;
+    max-width: 370px;
     width: 100%;
-}
-
-.card-item:hover {
-    border: 1px solid #3DB370;
+    box-sizing: border-box;
 }
 
 .wrapper_card-item {
     padding: 40px;
 }
 
-.green-icon {
-    /* display: none; */
+/*         first opton              */
+
+svg.icon path.color-one {
+    fill: #D1E7FF;
+}
+
+svg.icon path.color-two {
+    fill: #E8F3FF;
+}
+
+svg.icon path.color-three {
+    fill: #B9DCFF;
+}
+
+svg.icon path.color-four {
+    fill: #007FFC;
+}
+
+.card-item:hover {
+    border: 1px solid #3DB370;
+}
+
+.card-item:hover svg.icon path.color-one {
+    fill: #E1F4F5;
+}
+
+.card-item:hover svg.icon path.color-two {
+    fill: #F4FEFF;
+}
+
+.card-item:hover svg.icon path.color-three {
+    fill: #CAEFF2;
+}
+
+.card-item:hover svg.icon path.color-four {
+    fill: #52C29D;
+}
+
+/*            end first opton              */
+
+/*        second opton           */
+
+/* .green-icon {
     visibility: hidden;
 }
 
 .wrapper_card-item:hover .blue-icon {
-    /* display: none; */
     visibility: hidden;
     transition: all 0.8s ease-in;
 }
 
 .wrapper_card-item:hover .green-icon {
-    /* display: block; */
     visibility: visible;
     transition: all 0.8s ease-in;
-}
+} */
+
+/*     end second opton           */
 
 .card-item_icon {
     width: 64px;
@@ -168,6 +220,12 @@ a {
     font-size: 16px;
     line-height: 19px;
     color: #3DB370;
+    transition: all 0.8 ease-in;
+}
+
+.link:hover {
+    font-size: 20px;
+    color: #12773e;
 }
 
 .footer {
