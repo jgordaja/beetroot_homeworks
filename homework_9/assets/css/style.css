@@ -80,7 +80,7 @@ input[type=checkbox] {
 
 label {
     display: inline-block;
-    width: 534px;
+    width: 100%;
     line-height: 45px;
     color: #ffffff;
     cursor: pointer;
