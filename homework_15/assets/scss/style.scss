@@ -1,0 +1,239 @@
+@use 'fonts';
+@use 'reset'; 
+
+$font-title: 'Roboto', sans-serif;
+$font-subtitle: 'Raleway', sans-serif;
+$font-link: 'Open Sans', sans-serif;
+
+$gold: #FFCC00;
+$subtitle-color: #898F8F;
+$slider-title-color: #666666;
+$description-color: #333333; 
+
+$border: 1px solid $gold;
+
+@mixin title {
+	font-family: $font-title; 
+	font-weight: 900;
+}
+
+@mixin slider-title {
+	text-transform: capitalize; 
+	color: $slider-title-color;
+}
+
+@mixin text-styling($fw, $fz, $lh, $color) {
+	font-weight: $fw;
+	font-size: $fz;
+	line-height: $lh;
+	color: $color;
+}
+
+.container { 
+	// margin: 120px auto; //??? тут як по макету 120?
+	margin: 15px auto;
+	width: 100%; 
+	max-width: 1170px; 
+	box-sizing: border-box;
+} 
+
+.section-head { 
+	text-align: center;
+	text-transform: uppercase; 
+	margin-bottom: 40px;
+
+	.subtitle {
+		font-family: $font-subtitle;
+		@include text-styling(500, 18px, 24px, $subtitle-color); 
+		margin-bottom: 15px;
+	}
+
+	.title-section { 
+		@include title; 
+		font-size: 60px;
+		line-height: 66px; 
+		color: $gold;
+		margin-bottom: 40px; 
+	}
+
+	.border-decoration {
+		position: relative;
+		display: inline-block;
+		width: 450px;
+		border-bottom: $border;
+
+		&::after { 
+			content: url('../img/bonfire-sharp.svg');
+			position: absolute;
+			width: 30px;
+			height: 20px; 
+			bottom: 0;
+			right: 50%;
+			color: $gold;
+			transform: translate(50%, 50%);
+			background-color: #ffffff;
+		}
+	}
+}
+
+.section-slider {
+	margin: 0 70px;
+	display: flex;
+	align-items: center; 
+}
+
+.photo-block {
+	flex: 1 1 0; 
+	padding: 0 70px 0 15px;
+} 
+
+.photo-wrapper {
+	max-width: 400px; 
+}
+
+.angle-wrapper {
+	position: relative;
+}
+
+.angle {
+	position: absolute; 
+	width: 100px;
+	height: 100px;
+}
+
+.top-left-angle {
+	top: -15px;
+	left: -15px; 
+	border-top: $border;
+	border-left: $border;
+}
+
+.top-right-angle {
+	top: -15px;
+	right: -15px; 
+	border-top: $border;
+	border-right: $border;
+}
+
+.bottom-left-angle {
+	bottom: -15px;
+	left: -15px; 
+	border-bottom: $border;
+	border-left: $border;
+}
+
+.bottom-right-angle {
+	bottom: -15px;
+	right: -15px; 
+	border-bottom: $border;
+	border-right: $border;
+}
+
+.photo {
+	width: 100%;
+	padding-top: 100%; 
+	position: relative;
+
+	& img { 
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border: $border; 
+	}
+}
+
+.info-block {
+	flex: 1 1 0;
+	padding: 70px 0 70px 85px;
+	text-align: center;
+	border-left: $border; 
+
+	&_title {
+		@include title; 
+		@include slider-title;
+		font-size: 36px;
+		line-height: 42px; 
+		margin-bottom: 60px;
+	}
+
+	&_post { 
+		font-family: $font-subtitle;
+		@include slider-title;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 36px; 
+		margin-bottom: 30px;
+	}
+
+	&_description {
+		font-family: $font-subtitle;
+		@include text-styling(500, 14px, 24px, $description-color); 
+		margin-bottom: 20px; 
+	}
+
+	a.link {
+		font-family: $font-link;
+		@include text-styling(700, 14px, 14px, $slider-title-color); 
+		text-transform: uppercase; 
+		padding: 5px 10px;
+		border: $border;
+		transition: all 0.3s ease;
+	
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+.social-icons {
+	margin-bottom: 50px;
+	font-size: 0;
+
+	.social-icon_link:not(.social-icon_link:last-child) {
+		padding-right: 5px;
+		line-height: 0;
+	}
+
+	.social-icon  {
+		width: 30px;
+		height: 30px;
+		stroke: #CCCCCC;
+		fill: #CCCCCC;
+		transition: all 0.3s ease;
+
+		&:hover {
+			stroke: $gold;
+			fill: $gold;
+			transform: scale(1.1);
+		}
+	} 
+}
+
+.dashed-border {
+	margin: 0 auto 25px auto;
+	display: block;
+	width: 20px;
+	height: 4px;
+	background-color: $gold;
+	position: relative;
+
+	&::before, &::after  {
+		content: '';
+		position: absolute;
+		top: 0;
+		width: 10px; 
+		height: 4px;
+		background-color: $gold;
+	}
+
+	&::before { 
+		left: -15px; 
+	}
+	
+	&::after { 
+		right: -15px; 
+	} 
+} 
