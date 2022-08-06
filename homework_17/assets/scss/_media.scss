@@ -1,0 +1,134 @@
+@media screen and (max-width: 801px) {
+    .header {
+        .nav {
+            display: block;
+            padding-top: 15px; 
+            padding-bottom: 5px;
+            text-align: center;
+                
+            .nav__link {
+                font-size: 18px;
+                line-height: 20px;
+                padding-bottom: 15px;
+                padding-bottom: 10px;
+            } 
+        }
+
+        .header__callback {
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+
+    .main {
+        padding: 60px 0;
+
+        .who-we-are__title {
+            margin-bottom: 20px;
+            font-size: 30px;
+            line-height: 36px;
+        }
+
+        .who-we-are__text {
+            margin-bottom: 30px;
+        }
+    }
+
+    .who-we-are__cards {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px;
+
+        .cards__item { 
+            flex: 0 0 33.333%; 
+        }
+    }
+
+    .footer {
+        padding: 25px 0;
+
+        .nav__link {
+            font-size: 16px;
+            line-height: 18px; 
+        } 
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        display: block;
+        text-align: center;
+
+        .nav {
+            display: flex;
+            justify-content: center; 
+            column-gap: 15px;
+            padding: 10px 0;
+        }
+
+        .header__callback {
+            margin: 10px auto;
+        }
+    }
+
+    .main {
+        padding: 40px 0;
+        text-align: center;
+
+        .who-we-are__title {
+            margin-bottom: 18px;
+            font-size: 28px;
+            line-height: 34px;
+        }
+
+        .who-we-are__text {
+            margin-bottom: 20px;
+        }
+
+        .who-we-are__cards {
+            justify-content: center;
+            row-gap: 20px; 
+
+            .flip-card {
+                margin-bottom: 10px;
+            }
+            
+            .cards__item { 
+                flex: 0 0 55%; 
+
+                .card__name, .card__post{
+                    font-size: 16px;
+                    line-height: 18px; 
+                }
+            }
+        } 
+    }
+
+    .footer {
+        padding: 20px 0;
+
+        .nav {
+            column-gap: 15px;
+        } 
+        
+        .footer__socials.icons .icons__item {
+            margin-right: 5px;
+        }
+    }
+ }
+
+ @media screen and (max-width: 360px) {
+    .header {
+        .nav {
+            display: block;
+            padding-top: 15px; 
+            padding-bottom: 5px; 
+        }
+    } 
+    
+    .footer {
+        .footer__nav {
+            display: none;
+        }
+    }
+ }

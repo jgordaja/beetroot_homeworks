@@ -1,0 +1,72 @@
+@font-face {
+    // font-family: 'Lato Light';
+    font-family: 'Lato'; 
+    font-weight: 300;
+    font-style: normal;
+    src: url('../fonts/Lato-Light.woff') format('woff');
+    src: url('../fonts/Lato-Light.woff') format('woff'), 
+        url('../fonts/Lato-Light.eot?#iefix') format('embedded-opentype'), 
+        url('../fonts/Lato-Light.ttf') format('truetype');
+
+}
+
+@font-face {
+    // font-family: 'Lato Semibold';
+    font-family: 'Lato'; 
+    font-weight: 600;
+    font-style: normal;
+    src: url('../fonts/Lato-Semibold.ttf') format('truetype'); 
+}
+
+@font-face {
+    // font-family: 'Lato Bold';
+    font-family: 'Lato'; 
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/Lato-Bold.woff') format('woff');
+    src: url('../fonts/Lato-Bold.woff') format('woff'),
+        url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato-Bold.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.ttf?ydeboy');
+    src:  url('../fonts/icomoon.woff?ydeboy') format('woff'), 
+      url('../fonts/icomoon.eot?ydeboy#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?ydeboy') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-instagram:before {
+    content: "\ea92";
+  }
+  .icon-telegram:before {
+    content: "\ea95";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-linkedin2:before {
+    content: "\eaca";
+  }
