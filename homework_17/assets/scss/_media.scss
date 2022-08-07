@@ -126,9 +126,10 @@
         }
     } 
     
-    .footer {
-        .footer__nav {
-            display: none;
+    .footer
+    {
+        .nav {
+            flex-direction: column; 
         }
     }
  }
