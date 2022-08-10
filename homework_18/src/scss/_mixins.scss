@@ -1,0 +1,10 @@
+
+@mixin title_section($fz, $lh, $ls) {
+	font-size: $fz;
+	line-height: $lh; 	
+	letter-spacing: $ls;
+}
+
+@mixin transition($time) {
+	transition: all $time ease;
+}
