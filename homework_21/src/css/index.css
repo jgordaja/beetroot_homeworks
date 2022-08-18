@@ -1,0 +1,324 @@
+body * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, div, ul {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("/src/fonts/Commissioner-Light.eot");
+  src: local("/src/fonts/Commissioner Light"), local("/src/fonts/Commissioner-Light"), url("/src/fonts/Commissioner-Light.eot?#iefix") format("embedded-opentype"), url("/src/fonts/Commissioner-Light.woff2") format("woff2"), url("/src/fonts/Commissioner-Light.woff") format("woff"), url("/src/fonts/Commissioner-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Commissioner";
+  src: url("/src/fonts/Commissioner-Regular.eot");
+  src: local("/src/fonts/Commissioner Regular"), local("/src/fonts/Commissioner-Regular"), url("/src/fonts/Commissioner-Regular.eot?#iefix") format("embedded-opentype"), url("/src/fonts/Commissioner-Regular.woff2") format("woff2"), url("/src/fonts/Commissioner-Regular.woff") format("woff"), url("/src/fonts/Commissioner-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Commissioner";
+  src: url("/src/fonts/Commissioner-Medium.eot");
+  src: local("/src/fonts/Commissioner Medium"), local("/src/fonts/Commissioner-Medium"), url("/src/fonts/Commissioner-Medium.eot?#iefix") format("embedded-opentype"), url("/src/fonts/Commissioner-Medium.woff2") format("woff2"), url("/src/fonts/Commissioner-Medium.woff") format("woff"), url("/src/fonts/Commissioner-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Commissioner";
+  src: url("/src/fonts/Commissioner-SemiBold.eot");
+  src: local("/src/fonts/Commissioner SemiBold"), local("/src/fonts/Commissioner-SemiBold"), url("/src/fonts/Commissioner-SemiBold.eot?#iefix") format("embedded-opentype"), url("/src/fonts/Commissioner-SemiBold.woff2") format("woff2"), url("/src/fonts/Commissioner-SemiBold.woff") format("woff"), url("/src/fonts/Commissioner-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Commissioner";
+  src: url("/src/fonts/Commissioner-Bold.eot");
+  src: local("/src/fonts/Commissioner Bold"), local("/src/fonts/Commissioner-Bold"), url("/src/fonts/Commissioner-Bold.eot?#iefix") format("embedded-opentype"), url("/src/fonts/Commissioner-Bold.woff2") format("woff2"), url("/src/fonts/Commissioner-Bold.woff") format("woff"), url("/src/fonts/Commissioner-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.article, .header__container,
+.logo-nav-block,
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body {
+  font-family: Commissioner, sans-serif;
+  color: #000000;
+  background-image: url(/src/img/body/first_screen_bg.png);
+  background-repeat: no-repeat, repeat;
+  background-position: top right;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.header__container,
+.footer__container,
+.container {
+  max-width: 1230px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  padding-top: 20px;
+  margin-right: 100px;
+}
+
+.header__nav,
+.footer__nav,
+.footer__logo-second {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.menu .menu__item {
+  margin-right: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.menu .menu__item:hover {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.header__call {
+  position: relative;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.header__call:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.header__call::before {
+  position: absolute;
+  content: url(/src/img/base/phone-icon.svg);
+  left: -45px;
+  top: -10px;
+}
+
+.hero {
+  padding-top: 130px;
+  padding-bottom: 230px;
+  margin-bottom: 120px;
+}
+.hero .hero__title {
+  max-width: 664px;
+  width: 100%;
+  margin-bottom: 44px;
+  font-size: 48px;
+  line-height: 59px;
+}
+.hero .hero__title .color-title {
+  color: #018FA3;
+  text-transform: uppercase;
+  position: relative;
+}
+.hero .hero__title .color-title::before {
+  position: absolute;
+  content: "KEMENGER MEKTEBI";
+  top: -25px;
+  left: -33px;
+  width: 100%;
+  color: rgba(1, 143, 163, 0.06);
+}
+.hero .hero__description {
+  max-width: 530px;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 44px;
+}
+
+.button {
+  padding: 20px 45px;
+  font-size: 20px;
+  line-height: 24px;
+  -webkit-box-shadow: 0px 20px 40px -27px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 20px 40px -27px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+  border: none;
+}
+
+.button-yellow {
+  background: #FAE01A;
+  position: relative;
+  cursor: pointer;
+}
+.button-yellow::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 70%;
+  left: 0;
+  bottom: 0;
+  background: #FAE01A;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+  border-radius: 30px;
+  z-index: -1;
+}
+
+.articles {
+  margin-bottom: 140px;
+}
+
+.article .article__text {
+  max-width: 460px;
+  width: 100%;
+  font-size: 24px;
+  line-height: 29px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: relative;
+  margin: 0 auto;
+}
+.article .article__text::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -25px;
+  right: -30px;
+  background: #FFF7BE;
+  border-radius: 30px;
+  z-index: -1;
+}
+.article .img-wrapper, .article .img-wrapper--right {
+  position: relative;
+}
+.article .img-wrapper::after, .article .img-wrapper--right::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 4px dashed #018fa3;
+  border-radius: 30px;
+  z-index: -1;
+}
+.article .img-wrapper .article__img, .article .img-wrapper--right .article__img {
+  border-radius: 30px;
+}
+.article .img-wrapper {
+  margin-left: 32px;
+  margin-bottom: 32px;
+}
+.article .img-wrapper::after {
+  bottom: -32px;
+  left: -32px;
+}
+.article .img-wrapper--right {
+  margin-right: 32px;
+}
+.article .img-wrapper--right::after {
+  right: -32px;
+  bottom: -32px;
+}
+
+.article-first {
+  padding-bottom: 115px;
+}
+.article-first .article__text::after {
+  position: absolute;
+  content: "";
+  top: -75px;
+  left: -60px;
+  width: 100%;
+  height: 100%;
+  background-image: url(/src/img/about/bg_img_1.svg);
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.article-second .article__text::after {
+  position: absolute;
+  content: "";
+  bottom: -60px;
+  right: -102px;
+  width: 45%;
+  height: 115%;
+  background-image: url(/src/img/about/bg_img_2.svg);
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.footer {
+  background: #0A2530;
+}
+.footer .footer__logo {
+  margin-right: 100px;
+}
+.footer .footer__container {
+  padding-bottom: 56px;
+  padding-top: 56px;
+}
+.footer .menu__item {
+  color: #FFFFFF;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,60 @@
+ @font-face {
+    font-family: 'Commissioner';
+    src: url('/src/fonts/Commissioner-Light.eot');
+    src: local('/src/fonts/Commissioner Light'), local('/src/fonts/Commissioner-Light'),
+        url('/src/fonts/Commissioner-Light.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Commissioner-Light.woff2') format('woff2'),
+        url('/src/fonts/Commissioner-Light.woff') format('woff'),
+        url('/src/fonts/Commissioner-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('/src/fonts/Commissioner-Regular.eot');
+    src: local('/src/fonts/Commissioner Regular'), local('/src/fonts/Commissioner-Regular'),
+        url('/src/fonts/Commissioner-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Commissioner-Regular.woff2') format('woff2'),
+        url('/src/fonts/Commissioner-Regular.woff') format('woff'),
+        url('/src/fonts/Commissioner-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('/src/fonts/Commissioner-Medium.eot');
+    src: local('/src/fonts/Commissioner Medium'), local('/src/fonts/Commissioner-Medium'),
+        url('/src/fonts/Commissioner-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Commissioner-Medium.woff2') format('woff2'),
+        url('/src/fonts/Commissioner-Medium.woff') format('woff'),
+        url('/src/fonts/Commissioner-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('/src/fonts/Commissioner-SemiBold.eot');
+    src: local('/src/fonts/Commissioner SemiBold'), local('/src/fonts/Commissioner-SemiBold'),
+        url('/src/fonts/Commissioner-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Commissioner-SemiBold.woff2') format('woff2'),
+        url('/src/fonts/Commissioner-SemiBold.woff') format('woff'),
+        url('/src/fonts/Commissioner-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('/src/fonts/Commissioner-Bold.eot');
+    src: local('/src/fonts/Commissioner Bold'), local('/src/fonts/Commissioner-Bold'),
+        url('/src/fonts/Commissioner-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/src/fonts/Commissioner-Bold.woff2') format('woff2'),
+        url('/src/fonts/Commissioner-Bold.woff') format('woff'),
+        url('/src/fonts/Commissioner-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
