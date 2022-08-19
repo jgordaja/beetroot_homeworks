@@ -4,7 +4,11 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KEMENGER MEKTEBI - центр интеллектуального развития</title>
-    <link rel="stylesheet" href="./src/css/index.min.css">
+    <!-- slick --> 
+    <link rel="stylesheet" type="text/css" href="./src/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./src/slick/slick-theme.css"/>
+    <<!-- slick -->
+    <link rel="stylesheet" href="./src/css/index.min.css"> 
 </head>
 <body> 
     <header class="header">
@@ -71,7 +75,201 @@
             </div> 
         </section> 
         <section class="catalog" id="catalog">
-
+            <!-- <div class="container">
+                <h2 class="title semibold">
+                    Каталог
+                </h2>
+                <div class="catalog__contant">
+                    
+                </div>
+            </div> -->
+        </section>
+        <section class="sertificats" id="sertificats">
+            <div class="container">
+                <h2 class="title semibold">
+                    Наши сертификаты
+                </h2>
+                <div class="sertificats__content">
+                    <div class="sertificats__item sertificat">
+                        <div class="sertificat__inner">
+                            <img class="sertificat__img" src="./src/img/certificates/sertificats_1.jpg" alt="sertificat 1"> 
+                        </div>
+                        <div class="sertificat__inner--hover">
+                            <img class="sertificat__img--hover" src="./src/img/certificates/sertificats_1.jpg" alt="sertificat 1">
+                        </div> 
+                    </div> 
+                    <div class="sertificats__item sertificat">
+                        <div class="sertificat__inner">
+                            <img class="sertificat__img" src="./src/img/certificates/sertificats_2.jpg" alt="sertificat 1"> 
+                        </div>
+                        <div class="sertificat__inner--hover">
+                            <img class="sertificat__img--hover" src="./src/img/certificates/sertificats_2.jpg" alt="sertificat 1">
+                        </div> 
+                    </div> 
+                    <div class="sertificats__item sertificat">
+                        <div class="sertificat__inner">
+                            <img class="sertificat__img" src="./src/img/certificates/sertificats_3.jpg" alt="sertificat 1"> 
+                        </div>
+                        <div class="sertificat__inner--hover">
+                            <img class="sertificat__img--hover" src="./src/img/certificates/sertificats_3.jpg" alt="sertificat 1">
+                        </div> 
+                    </div> 
+                    <div class="sertificats__item sertificat">
+                        <div class="sertificat__inner">
+                            <img class="sertificat__img" src="./src/img/certificates/sertificats_1.jpg" alt="sertificat 1"> 
+                        </div>
+                        <div class="sertificat__inner--hover">
+                            <img class="sertificat__img--hover" src="./src/img/certificates/sertificats_1.jpg" alt="sertificat 1">
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2 class="title semibold">
+                    Отзывы
+                </h2>
+                <div class="reviews__cards cards multiple-items"> 
+                    <!-- <div class="arrow left-arrow">
+                        <img src="./src/img/base/arrow_left.svg" alt="left arrow of the slider">
+                    </div>
+                    <div class="arrow right-arrow">
+                        <img src="./src/img/base/arrow_right.svg" alt="left arrow of the slider">
+                    </div> -->
+                    <div class="card__item card">
+                        <div class="card__reviewer reviewer">
+                            <div class="reviewer__avatar">
+                                <img src="./src/img/reviews/avatar_1.jpg" alt="avatar reviewer">
+                            </div>
+                            <h3 class="reviewer__name semibold">
+                                Malika Fazlieva
+                            </h3>
+                        </div>
+                        <p class="reviewer__text regular">
+                            Маған ұнаған жері білімді жақсы береді. Ұлымның қатынап жүргеніне 1 ай болмады бірақ нәтиже бар. Мұғалімдеріде өте сыпайы әрі білімді. 
+                        </p>
+                    </div>
+                    <div class="card__item card">
+                        <div class="card__reviewer reviewer">
+                            <div class="reviewer__avatar">
+                                <img src="./src/img/reviews/avatar_2.jpg" alt="avatar reviewer">
+                            </div>
+                            <h3 class="reviewer__name semibold">
+                                Aigul Lepessova
+                            </h3>
+                        </div>
+                        <p class="reviewer__text regular">
+                            Отлично все нравится! Внучка уже 6 месяц занимается, довольны
+                        </p>
+                    </div>
+                    <div class="card__item card">
+                        <div class="card__reviewer reviewer">
+                            <div class="reviewer__avatar">
+                                <img src="./src/img/reviews/avatar_3.jpg" alt="avatar reviewer">
+                            </div>
+                            <h3 class="reviewer__name semibold">
+                                Malika Fazlieva
+                            </h3>
+                        </div>
+                        <p class="reviewer__text regular">
+                            Маған ұнаған жері білімді жақсы береді. Ұлымның қатынап жүргеніне 1 ай болмады бірақ нәтиже бар. Мұғалімдеріде өте сыпайы әрі білімді. 
+                        </p>
+                    </div>
+                    <div class="card__item card">
+                        <div class="card__reviewer reviewer">
+                            <div class="reviewer__avatar">
+                                <img src="./src/img/reviews/avatar_4.jpg" alt="avatar reviewer">
+                            </div>
+                            <h3 class="reviewer__name semibold">
+                                Анара Баймаганбетова
+                            </h3>
+                        </div>
+                        <p class="reviewer__text regular">
+                            Искренне рекомендую, детям дают отличные знания и безопасность. Профессионалы своего дела. Удачи вам и успехов желаю.
+                        </p>
+                    </div>
+                    <div class="card__item card">
+                        <div class="card__reviewer reviewer">
+                            <div class="reviewer__avatar">
+                                <img src="./src/img/reviews/avatar_5.jpg" alt="avatar reviewer">
+                            </div>
+                            <h3 class="reviewer__name semibold">
+                                Gulzhan Kossantayeva
+                            </h3>
+                        </div>
+                        <p class="reviewer__text regular">
+                            Комфорная обстановака, распологает к учебе, учителя доброжелательные,но требовательные! То, что надо! Советую 100%.
+                        </p>
+                    </div>
+                    <div class="card__item card">
+                        <div class="card__reviewer reviewer">
+                            <div class="reviewer__avatar">
+                                <img src="./src/img/reviews/avatar_6.jpg" alt="avatar reviewer">
+                            </div>
+                            <h3 class="reviewer__name semibold">
+                                Енлик Серик
+                            </h3>
+                        </div>
+                        <p class="reviewer__text regular">
+                            Айжан Талгатовна өз ісінің маманы. Менің қызымның оқу үлгеріміне көп ықпал тигіздіңіз. Кемеңгер мектебі нағыз кеменгер бала тәлімін береді!
+                        </p>
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container contacts__container">
+                <div class="contacts__block">
+                    <h2 class="title contacts__title medium">
+                        Наши контакты
+                    </h2>
+                    <div class="contacts__text text">
+                        <span class="text__subtitle semibold">
+                            Запишитесь на бесплатный пробный урок по номеру:
+                        </span>
+                        <span class="text__content">
+                            8 (771) 145-98-26 
+                        </span> 
+                    </div>
+                    <div class="contacts__text text">
+                        <span class="text__subtitle semibold">
+                            Адрес:
+                        </span>
+                        <span class="text__content">
+                            г. Нур-Султан, ул. К. Аманжолова, 28, офис 14
+                        </span> 
+                    </div>
+                    <div class="contacts__text text">
+                        <span class="text__subtitle semibold">
+                            График работы:
+                        </span>
+                        <span class="text__content">
+                            Пн-Пт - 9:00-19:00; 
+                        </span> 
+                        <span class="text__content"> 
+                            Сб - 9:00-17:00; 
+                        </span> 
+                        <span class="text__content"> 
+                            Вс - выходной
+                        </span> 
+                    </div>
+                    <div class="contacts__text text">
+                        <span class="text__subtitle semibold">
+                            E-mail:
+                        </span>
+                        <span class="text__content">
+                            <a href="mailto: @kemenger.mektebi" target="_blank">@kemenger.mektebi</a> 
+                        </span> 
+                    </div>
+                </div>
+                <div class="contacts__gmap"> 
+                    <div class="gmap_canvas">
+                        <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=795&amp;height=540&amp;hl=en&amp;q=г. Нур-Султан, ул. К. Аманжолова, 28, офис 14&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        <a href="https://embedmapgenerator.com/">embed google maps in website</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main> 
     <footer class="footer">
@@ -104,6 +302,48 @@
                 <img src="./src/img/base/logo_2.svg" alt="second logo">
             </a>
         </div>
-    </footer>
+    </footer> 
+
+    <script type="text/javascript" src="./src/js/jquery-1.11.0.min.js"></script> 
+    <script type="text/javascript" src="./src/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() { 
+            $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+                accessibility: true,
+                arrows: true,
+                dots: true,
+                swipe: true, 
+                mobileFirst: true,
+
+                // the magic ))))
+                responsive: [{
+
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3, 
+                    }
+
+                }, {
+
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2, 
+                    }
+
+                }, {
+
+                    breakpoint: 300,
+                    settings: {
+                        slidesToShow: 1, 
+                    } 
+                }]
+            });
+        });
+      </script>
 </body>
 </html>
