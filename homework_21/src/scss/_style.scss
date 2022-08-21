@@ -7,7 +7,10 @@ $color: #000000;
 
 body {
     font-family: Commissioner, sans-serif;
-    color: $color;
+    color: $color; 
+}
+
+.body {
     background-image: url(../img/body/first_screen_bg.png);
     background-repeat: no-repeat;
     background-position: top right;
@@ -51,6 +54,14 @@ body {
 .header__logo {
     padding-top: 20px;
     margin-right: 100px;
+}
+
+.img__logo {
+    max-width: 102px;
+}
+
+.img__logo-second {
+    max-width: 187px;
 }
 
 .header__nav, 
@@ -111,15 +122,7 @@ body {
             color: #018FA3;
             text-transform: uppercase;
             position: relative;
-
-            &::before {
-                position: absolute;
-                content: 'KEMENGER MEKTEBI';
-                top: -25px;
-                left: -33px;
-                width: 100%;
-                color: rgba(1, 143, 163, 0.06);
-            }
+            text-shadow: -33px -25px 0 rgba(1, 143, 163, 0.06);
         }
     }
 
@@ -190,19 +193,35 @@ body {
 
     .img-wrapper, .img-wrapper--right {
         position: relative;
+        max-width: 488px;
+        width: 100%;
+
+        &::before {
+            content: '';
+            display: block;
+            padding-top: 70.28%;
+        }
+
+        .article__img {
+            border-radius: 30px; 
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            object-position: center;
+        }
 
         &::after {
             position: absolute;
             content: ""; 
             width: 100%;
-            height: 100%;
+            height: 100%; 
             border: 4px dashed #018fa3;
             border-radius: 30px;
             z-index: -1;
-        }
-
-        .article__img {
-            border-radius: 30px; 
         }
     }
 
@@ -298,28 +317,6 @@ body {
                     cursor: pointer;
                 }
             }
-
-            .sertificat__inner--hover {
-                position: absolute; 
-                width: 0; 
-                bottom: 0;
-                left: 0; 
-                transform: translate(0, 0);
-                transition: all 0.8s ease;
-            }
-            
-            &:hover {
-                .sertificat__inner--hover { 
-                    z-index: 1;
-                    width: 600px; 
-                    bottom: 30%; 
-                    left: 20%;
-                    transform: translate(-25%, -10%);
-                    -webkit-box-shadow: 10px 7px 28px 23px rgba(181,174,181,1);
-                    -moz-box-shadow: 10px 7px 28px 23px rgba(181,174,181,1);
-                    box-shadow: 10px 7px 28px 23px rgba(181,174,181,1);
-                }
-            }
         }
     }
 }
@@ -327,54 +324,7 @@ body {
 .reviews {
     margin-bottom: 70px;
 
-    .reviews__cards {
-        // стилі без slack 
-
-        // display: flex;
-        // gap: 20px;
-        // position: relative;
-
-        // .arrow {
-        //     position: absolute;
-        //     top: 50%;
-        //     cursor: pointer;
-        // }
-
-        // .left-arrow {
-        //     left: -48px;
-        //     transform: translateY(-50%);
-        // }
-
-        // .right-arrow { 
-        //     right: -48px;
-        //     transform: translateY(-50%);
-        // }
-
-        // ---- перевизначення типів для стрілок слайдера
-        .slick-next::before {
-            position: absolute;
-            content: '';
-            background: url(../img/base/arrow_right.svg) no-repeat;
-            top: 50%; 
-            right: -48px;
-            transform: translateY(-50%);
-            width: 30px;
-            height: 65px; 
-        }
-
-        .slick-prev::before {
-            position: absolute;
-            content: '';
-            background: url(../img/base/arrow_left.svg) no-repeat;
-            top: 50%; 
-            left: -48px;
-            transform: translateY(-50%);
-            width: 30px;
-            height: 65px;
-        }
-
-        // ---- перевизначення типів для стрілок слайдера
-
+    .reviews__cards { 
         .card__item {
             padding: 36px;
             border: 4px solid #018FA3;
@@ -410,6 +360,35 @@ body {
             max-width: 327px;
         }
     }
+}
+
+// перевизначення типів для стрілок слайдера
+.slick-next::before {
+    position: absolute;
+    content: '';
+    background: url(../img/base/arrow_right.svg) no-repeat;
+    top: 50%; 
+    right: -48px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 65px; 
+}
+
+.slick-prev::before {
+    position: absolute;
+    content: '';
+    background: url(../img/base/arrow_left.svg) no-repeat;
+    top: 50%; 
+    left: -48px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 65px;
+}
+
+// зробити однакову висоту слайдів
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    display: flex;
 }
 
 .contacts { 
@@ -454,8 +433,15 @@ body {
             } 
 
             .text__subtitle, .text__content {
-                display: block;
+                display: block; 
+            }
 
+            .link { 
+                transition: all 0.5s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                } 
             }
         }
     }
@@ -506,8 +492,7 @@ body {
             z-index: -2;
         }
     }
-}
-
+} 
 
 .footer {
     background: #0A2530;

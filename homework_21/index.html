@@ -4,307 +4,303 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KEMENGER MEKTEBI - центр интеллектуального развития</title>
+    <!-- lightbox -->
+    <link rel="stylesheet" href="./src/lightbox/lightbox.css"> 
     <!-- slick --> 
     <link rel="stylesheet" type="text/css" href="./src/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./src/slick/slick-theme.css"/>
-    <<!-- slick -->
+    <!-- main styles -->
     <link rel="stylesheet" href="./src/css/index.min.css"> 
 </head>
-<body> 
-    <header class="header">
-        <div class="header__container">
-            <div class="logo-nav-block">
-                <a href="#" class="header__logo">
-                    <img src="./src/img/base/logo.svg" alt="logotype">
-                </a>
-                <nav class="header__nav">
-                    <ul class="header__menu menu medium">
-                        <li class="menu__item">
-                            <a href="#about">О нас</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#catalog">Каталог</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#sertificats">Сертификаты</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#reviews">Отзывы</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#contacts">Контакты</a>
-                        </li>
-                    </ul> 
-                </nav> 
-            </div> 
-            <a class="header__call semibold" href="tel:+87711459826">8 (771) 145-98-26</a>
-        </div>
-    </header>
-    <main class="main"> 
-        <section class="about" id="about">
-            <section class="hero header__container">
-                <div class="hero__info">
-                    <h1 class="hero__title medium">
-                        <span class="color-title semibold">KEMENGER MEKTEBI</span> - центр интеллектуального развития
-                    </h1>
-                    <p class="hero__description">
-                        Обучение происходит на казахском и русском языках. При записи на два или более курсов предусмотрена скидка. Запишитесь на бесплатный пробный урок.
-                    </p>
-                    <button class="button button-yellow medium">
-                        Оставить заявку
-                    </button>
+<body>
+    <div class="body">
+        <header class="header">
+            <div class="header__container">
+                <div class="logo-nav-block">
+                    <a href="#" class="header__logo">
+                        <img class="img__logo" src="./src/img/base/logo.svg" alt="logotype">
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__menu menu medium">
+                            <li class="menu__item">
+                                <a href="#about">О нас</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#catalog">Каталог</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#sertificats">Сертификаты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#reviews">Отзывы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#contacts">Контакты</a>
+                            </li>
+                        </ul> 
+                    </nav> 
                 </div> 
-            </section>
-            <div class="articles container">
-                <article class="article article-first">
-                    <p class="article__text regular">
-                        В нашем центре работают профессиональные педагоги любящие детей и преданные своему делу. Мы помогаем детям совершенствовать свои интеллекуальные способности чтобы они могли  познавать мир и делать его более красивым и добрым. 
-                    </p>
-                    <div class="img-wrapper--right">
-                        <img class="article__img" src="./src/img/about/image_1.jpg" alt="Фотография занятия с детьми в классе">
-                    </div>
-                </article>
-                <article class="article article-second">
-                    <div class="img-wrapper">
-                        <img class="article__img" src="./src/img/about/image_2.jpg" alt="Фотография - дети пишут">
-                    </div>
-                    <p class="article__text regular">
-                        Наши ученики показывают результат уже с первого месяца работы, мы поддерживаем в нашем центре теплую и дружескую атмосферу Побывав у нас детям обязательно захочется вернуться сюда снова  Развивайтесь вместе с нами 
-                    </p>
-                </article>
-            </div> 
-        </section> 
-        <section class="catalog" id="catalog">
-            <!-- <div class="container">
-                <h2 class="title semibold">
-                    Каталог
-                </h2>
-                <div class="catalog__contant">
-                    
-                </div>
-            </div> -->
-        </section>
-        <section class="sertificats" id="sertificats">
-            <div class="container">
-                <h2 class="title semibold">
-                    Наши сертификаты
-                </h2>
-                <div class="sertificats__content">
-                    <div class="sertificats__item sertificat">
-                        <div class="sertificat__inner">
-                            <img class="sertificat__img" src="./src/img/certificates/sertificats_1.jpg" alt="sertificat 1"> 
-                        </div>
-                        <div class="sertificat__inner--hover">
-                            <img class="sertificat__img--hover" src="./src/img/certificates/sertificats_1.jpg" alt="sertificat 1">
-                        </div> 
-                    </div> 
-                    <div class="sertificats__item sertificat">
-                        <div class="sertificat__inner">
-                            <img class="sertificat__img" src="./src/img/certificates/sertificats_2.jpg" alt="sertificat 1"> 
-                        </div>
-                        <div class="sertificat__inner--hover">
-                            <img class="sertificat__img--hover" src="./src/img/certificates/sertificats_2.jpg" alt="sertificat 1">
-                        </div> 
-                    </div> 
-                    <div class="sertificats__item sertificat">
-                        <div class="sertificat__inner">
-                            <img class="sertificat__img" src="./src/img/certificates/sertificats_3.jpg" alt="sertificat 1"> 
-                        </div>
-                        <div class="sertificat__inner--hover">
-                            <img class="sertificat__img--hover" src="./src/img/certificates/sertificats_3.jpg" alt="sertificat 1">
-                        </div> 
-                    </div> 
-                    <div class="sertificats__item sertificat">
-                        <div class="sertificat__inner">
-                            <img class="sertificat__img" src="./src/img/certificates/sertificats_1.jpg" alt="sertificat 1"> 
-                        </div>
-                        <div class="sertificat__inner--hover">
-                            <img class="sertificat__img--hover" src="./src/img/certificates/sertificats_1.jpg" alt="sertificat 1">
-                        </div> 
-                    </div> 
-                </div>
+                <a class="header__call semibold" href="tel:+87711459826">8 (771) 145-98-26</a>
             </div>
-        </section>
-        <section class="reviews" id="reviews">
-            <div class="container">
-                <h2 class="title semibold">
-                    Отзывы
-                </h2>
-                <div class="reviews__cards cards multiple-items"> 
-                    <!-- <div class="arrow left-arrow">
-                        <img src="./src/img/base/arrow_left.svg" alt="left arrow of the slider">
-                    </div>
-                    <div class="arrow right-arrow">
-                        <img src="./src/img/base/arrow_right.svg" alt="left arrow of the slider">
-                    </div> -->
-                    <div class="card__item card">
-                        <div class="card__reviewer reviewer">
-                            <div class="reviewer__avatar">
-                                <img src="./src/img/reviews/avatar_1.jpg" alt="avatar reviewer">
-                            </div>
-                            <h3 class="reviewer__name semibold">
-                                Malika Fazlieva
-                            </h3>
-                        </div>
-                        <p class="reviewer__text regular">
-                            Маған ұнаған жері білімді жақсы береді. Ұлымның қатынап жүргеніне 1 ай болмады бірақ нәтиже бар. Мұғалімдеріде өте сыпайы әрі білімді. 
+        </header>
+        <main class="main"> 
+            <section class="about" id="about">
+                <section class="hero header__container">
+                    <div class="hero__info">
+                        <h1 class="hero__title medium">
+                            <span class="color-title semibold">KEMENGER MEKTEBI</span> - центр интеллектуального развития
+                        </h1>
+                        <p class="hero__description">
+                            Обучение происходит на казахском и русском языках. При записи на два или более курсов предусмотрена скидка. Запишитесь на бесплатный пробный урок.
                         </p>
-                    </div>
-                    <div class="card__item card">
-                        <div class="card__reviewer reviewer">
-                            <div class="reviewer__avatar">
-                                <img src="./src/img/reviews/avatar_2.jpg" alt="avatar reviewer">
-                            </div>
-                            <h3 class="reviewer__name semibold">
-                                Aigul Lepessova
-                            </h3>
-                        </div>
-                        <p class="reviewer__text regular">
-                            Отлично все нравится! Внучка уже 6 месяц занимается, довольны
-                        </p>
-                    </div>
-                    <div class="card__item card">
-                        <div class="card__reviewer reviewer">
-                            <div class="reviewer__avatar">
-                                <img src="./src/img/reviews/avatar_3.jpg" alt="avatar reviewer">
-                            </div>
-                            <h3 class="reviewer__name semibold">
-                                Malika Fazlieva
-                            </h3>
-                        </div>
-                        <p class="reviewer__text regular">
-                            Маған ұнаған жері білімді жақсы береді. Ұлымның қатынап жүргеніне 1 ай болмады бірақ нәтиже бар. Мұғалімдеріде өте сыпайы әрі білімді. 
-                        </p>
-                    </div>
-                    <div class="card__item card">
-                        <div class="card__reviewer reviewer">
-                            <div class="reviewer__avatar">
-                                <img src="./src/img/reviews/avatar_4.jpg" alt="avatar reviewer">
-                            </div>
-                            <h3 class="reviewer__name semibold">
-                                Анара Баймаганбетова
-                            </h3>
-                        </div>
-                        <p class="reviewer__text regular">
-                            Искренне рекомендую, детям дают отличные знания и безопасность. Профессионалы своего дела. Удачи вам и успехов желаю.
-                        </p>
-                    </div>
-                    <div class="card__item card">
-                        <div class="card__reviewer reviewer">
-                            <div class="reviewer__avatar">
-                                <img src="./src/img/reviews/avatar_5.jpg" alt="avatar reviewer">
-                            </div>
-                            <h3 class="reviewer__name semibold">
-                                Gulzhan Kossantayeva
-                            </h3>
-                        </div>
-                        <p class="reviewer__text regular">
-                            Комфорная обстановака, распологает к учебе, учителя доброжелательные,но требовательные! То, что надо! Советую 100%.
-                        </p>
-                    </div>
-                    <div class="card__item card">
-                        <div class="card__reviewer reviewer">
-                            <div class="reviewer__avatar">
-                                <img src="./src/img/reviews/avatar_6.jpg" alt="avatar reviewer">
-                            </div>
-                            <h3 class="reviewer__name semibold">
-                                Енлик Серик
-                            </h3>
-                        </div>
-                        <p class="reviewer__text regular">
-                            Айжан Талгатовна өз ісінің маманы. Менің қызымның оқу үлгеріміне көп ықпал тигіздіңіз. Кемеңгер мектебі нағыз кеменгер бала тәлімін береді!
-                        </p>
+                        <button class="button button-yellow medium">
+                            Оставить заявку
+                        </button>
                     </div> 
-                </div>
-            </div>
-        </section>
-        <section class="contacts" id="contacts">
-            <div class="container contacts__container">
-                <div class="contacts__block">
-                    <h2 class="title contacts__title medium">
-                        Наши контакты
+                </section>
+                <div class="articles container">
+                    <article class="article article-first">
+                        <p class="article__text regular">
+                            В нашем центре работают профессиональные педагоги любящие детей и преданные своему делу. Мы помогаем детям совершенствовать свои интеллекуальные способности чтобы они могли  познавать мир и делать его более красивым и добрым. 
+                        </p>
+                        <div class="img-wrapper--right">
+                            <img class="article__img" src="./src/img/about/image_1.jpg" alt="Фотография занятия с детьми в классе">
+                        </div>
+                    </article>
+                    <article class="article article-second">
+                        <div class="img-wrapper">
+                            <img class="article__img" src="./src/img/about/image_2.jpg" alt="Фотография - дети пишут">
+                        </div>
+                        <p class="article__text regular">
+                            Наши ученики показывают результат уже с первого месяца работы, мы поддерживаем в нашем центре теплую и дружескую атмосферу Побывав у нас детям обязательно захочется вернуться сюда снова  Развивайтесь вместе с нами 
+                        </p>
+                    </article>
+                </div> 
+            </section> 
+            <section class="catalog" id="catalog">
+                <!-- <div class="container">
+                    <h2 class="title semibold">
+                        Каталог
                     </h2>
-                    <div class="contacts__text text">
-                        <span class="text__subtitle semibold">
-                            Запишитесь на бесплатный пробный урок по номеру:
-                        </span>
-                        <span class="text__content">
-                            8 (771) 145-98-26 
-                        </span> 
+                    <div class="catalog__contant">
+                        
                     </div>
-                    <div class="contacts__text text">
-                        <span class="text__subtitle semibold">
-                            Адрес:
-                        </span>
-                        <span class="text__content">
-                            г. Нур-Султан, ул. К. Аманжолова, 28, офис 14
-                        </span> 
-                    </div>
-                    <div class="contacts__text text">
-                        <span class="text__subtitle semibold">
-                            График работы:
-                        </span>
-                        <span class="text__content">
-                            Пн-Пт - 9:00-19:00; 
-                        </span> 
-                        <span class="text__content"> 
-                            Сб - 9:00-17:00; 
-                        </span> 
-                        <span class="text__content"> 
-                            Вс - выходной
-                        </span> 
-                    </div>
-                    <div class="contacts__text text">
-                        <span class="text__subtitle semibold">
-                            E-mail:
-                        </span>
-                        <span class="text__content">
-                            <a href="mailto: @kemenger.mektebi" target="_blank">@kemenger.mektebi</a> 
-                        </span> 
-                    </div>
-                </div>
-                <div class="contacts__gmap"> 
-                    <div class="gmap_canvas">
-                        <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=795&amp;height=540&amp;hl=en&amp;q=г. Нур-Султан, ул. К. Аманжолова, 28, офис 14&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-                        <a href="https://embedmapgenerator.com/">embed google maps in website</a>
+                </div> -->
+            </section>
+            <section class="sertificats" id="sertificats">
+                <div class="container">
+                    <h2 class="title semibold">
+                        Наши сертификаты
+                    </h2> 
+                    <div class="sertificats__content">
+                        <div class="sertificats__item sertificat">
+                            <div class="sertificat__inner">
+                                <a href="./src/img/certificates/sertificats_1_2.webp" data-lightbox="image-1" data-title="Sertificat 1">
+                                    <img class="sertificat__img" src="./src/img/certificates/sertificats_1_2.webp" alt="sertificat 1"> 
+                                </a>
+                            </div> 
+                        </div> 
+                        <div class="sertificats__item sertificat">
+                            <div class="sertificat__inner">
+                                <a href="./src/img/certificates/sertificats_2_2.jpg" data-lightbox="image-2" data-title="Sertificat 2">
+                                    <img class="sertificat__img" src="./src/img/certificates/sertificats_2.jpg" alt="sertificat 2"> 
+                                </a> 
+                            </div> 
+                        </div> 
+                        <div class="sertificats__item sertificat">
+                            <div class="sertificat__inner">
+                                <a href="./src/img/certificates/sertificats_3.jpg" data-lightbox="image-3" data-title="Sertificat 3">
+                                    <img class="sertificat__img" src="./src/img/certificates/sertificats_3.jpg" alt="sertificat 3"> 
+                                </a> 
+                            </div> 
+                        </div> 
+                        <div class="sertificats__item sertificat">
+                            <div class="sertificat__inner">
+                                <a href="./src/img/certificates/sertificats_1.jpg" data-lightbox="image-4" data-title="Sertificat 4">
+                                    <img class="sertificat__img" src="./src/img/certificates/sertificats_1.jpg" alt="sertificat 4"> 
+                                </a> 1
+                            </div> 
+                        </div> 
                     </div>
                 </div>
-            </div>
-        </section>
-    </main> 
-    <footer class="footer">
-        <div class="footer__container">
-            <div class="logo-nav-block">
-                <a href="#" class="footer__logo">
-                    <img src="./src/img/base/logo.svg" alt="logotype">
+            </section>
+            <section class="reviews" id="reviews">
+                <div class="container">
+                    <h2 class="title semibold">
+                        Отзывы
+                    </h2>
+                    <div class="reviews__cards cards multiple-items"> 
+                        <div class="card__item card">
+                            <div class="card__reviewer reviewer">
+                                <div class="reviewer__avatar">
+                                    <img src="./src/img/reviews/avatar_1.jpg" alt="avatar reviewer">
+                                </div>
+                                <h3 class="reviewer__name semibold">
+                                    Malika Fazlieva
+                                </h3>
+                            </div>
+                            <p class="reviewer__text regular">
+                                Маған ұнаған жері білімді жақсы береді. Ұлымның қатынап жүргеніне 1 ай болмады бірақ нәтиже бар. Мұғалімдеріде өте сыпайы әрі білімді. 
+                            </p>
+                        </div>
+                        <div class="card__item card">
+                            <div class="card__reviewer reviewer">
+                                <div class="reviewer__avatar">
+                                    <img src="./src/img/reviews/avatar_2.jpg" alt="avatar reviewer">
+                                </div>
+                                <h3 class="reviewer__name semibold">
+                                    Aigul Lepessova
+                                </h3>
+                            </div>
+                            <p class="reviewer__text regular">
+                                Отлично все нравится! Внучка уже 6 месяц занимается, довольны
+                            </p>
+                        </div>
+                        <div class="card__item card">
+                            <div class="card__reviewer reviewer">
+                                <div class="reviewer__avatar">
+                                    <img src="./src/img/reviews/avatar_3.jpg" alt="avatar reviewer">
+                                </div>
+                                <h3 class="reviewer__name semibold">
+                                    Malika Fazlieva
+                                </h3>
+                            </div>
+                            <p class="reviewer__text regular">
+                                Маған ұнаған жері білімді жақсы береді. Ұлымның қатынап жүргеніне 1 ай болмады бірақ нәтиже бар. Мұғалімдеріде өте сыпайы әрі білімді. 
+                            </p>
+                        </div>
+                        <div class="card__item card">
+                            <div class="card__reviewer reviewer">
+                                <div class="reviewer__avatar">
+                                    <img src="./src/img/reviews/avatar_4.jpg" alt="avatar reviewer">
+                                </div>
+                                <h3 class="reviewer__name semibold">
+                                    Анара Баймаганбетова
+                                </h3>
+                            </div>
+                            <p class="reviewer__text regular">
+                                Искренне рекомендую, детям дают отличные знания и безопасность. Профессионалы своего дела. Удачи вам и успехов желаю.
+                            </p>
+                        </div>
+                        <div class="card__item card">
+                            <div class="card__reviewer reviewer">
+                                <div class="reviewer__avatar">
+                                    <img src="./src/img/reviews/avatar_5.jpg" alt="avatar reviewer">
+                                </div>
+                                <h3 class="reviewer__name semibold">
+                                    Gulzhan Kossantayeva
+                                </h3>
+                            </div>
+                            <p class="reviewer__text regular">
+                                Комфорная обстановака, распологает к учебе, учителя доброжелательные,но требовательные! То, что надо! Советую 100%.
+                            </p>
+                        </div>
+                        <div class="card__item card">
+                            <div class="card__reviewer reviewer">
+                                <div class="reviewer__avatar">
+                                    <img src="./src/img/reviews/avatar_6.jpg" alt="avatar reviewer">
+                                </div>
+                                <h3 class="reviewer__name semibold">
+                                    Енлик Серик
+                                </h3>
+                            </div>
+                            <p class="reviewer__text regular">
+                                Айжан Талгатовна өз ісінің маманы. Менің қызымның оқу үлгеріміне көп ықпал тигіздіңіз. Кемеңгер мектебі нағыз кеменгер бала тәлімін береді!
+                            </p>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+            <section class="contacts" id="contacts">
+                <div class="container contacts__container">
+                    <div class="contacts__block">
+                        <h2 class="title contacts__title medium">
+                            Наши контакты
+                        </h2>
+                        <div class="contacts__text text">
+                            <span class="text__subtitle semibold">
+                                Запишитесь на бесплатный пробный урок по номеру:
+                            </span>
+                            <span class="text__content">
+                                <a class="link" href="tel:+87711459826">8 (771) 145-98-26</a> 
+                            </span> 
+                        </div>
+                        <div class="contacts__text text">
+                            <span class="text__subtitle semibold">
+                                Адрес:
+                            </span> 
+                            <a class="text__content link" href="https://goo.gl/maps/m4hXNQHgAryJPm8d6" target="_blank">
+                                г. Нур-Султан, ул. К. Аманжолова, 28, офис 14
+                            </a> 
+                        </div>
+                        <div class="contacts__text text">
+                            <span class="text__subtitle semibold">
+                                График работы:
+                            </span>
+                            <span class="text__content">
+                                Пн-Пт - 9:00-19:00; 
+                            </span> 
+                            <span class="text__content"> 
+                                Сб - 9:00-17:00; 
+                            </span> 
+                            <span class="text__content"> 
+                                Вс - выходной
+                            </span> 
+                        </div>
+                        <div class="contacts__text text">
+                            <span class="text__subtitle semibold">
+                                E-mail:
+                            </span> 
+                            <a class="text__content link"" href="mailto: @kemenger.mektebi" target="_blank">@kemenger.mektebi</a> 
+                        </div>
+                    </div>
+                    <div class="contacts__gmap"> 
+                        <div class="gmap_canvas">
+                            <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=795&amp;height=540&amp;hl=en&amp;q=г. Нур-Султан, ул. К. Аманжолова, 28, офис 14&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                            <a href="https://embedmapgenerator.com/">embed google maps in website</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main> 
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="logo-nav-block">
+                    <a href="#" class="footer__logo">
+                        <img class="img__logo" src="./src/img/base/logo.svg" alt="logotype">
+                    </a>
+                    <nav class="footer__nav">
+                        <ul class="footer__menu menu medium">
+                            <li class="menu__item">
+                                <a href="#about">О нас</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#catalog">Каталог</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#sertificats">Сертификаты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#reviews">Отзывы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#contacts">Контакты</a>
+                            </li>
+                        </ul> 
+                    </nav> 
+                </div> 
+                <a class="footer__logo-second" href="#">
+                    <img class="img__logo-second" src="./src/img/base/logo_2.svg" alt="second logo">
                 </a>
-                <nav class="footer__nav">
-                    <ul class="footer__menu menu medium">
-                        <li class="menu__item">
-                            <a href="#about">О нас</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#catalog">Каталог</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#sertificats">Сертификаты</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#reviews">Отзывы</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#contacts">Контакты</a>
-                        </li>
-                    </ul> 
-                </nav> 
-            </div> 
-            <a class="footer__logo-second" href="#">
-                <img src="./src/img/base/logo_2.svg" alt="second logo">
-            </a>
-        </div>
-    </footer> 
+            </div>
+        </footer> 
+    </div>
 
+    <!-- jquery -->
     <script type="text/javascript" src="./src/js/jquery-1.11.0.min.js"></script> 
+    <!-- lightbox -->
+    <script type="text/javascript" src="./src/lightbox/lightbox.min.js"></script> 
+    <!-- slick -->
     <script type="text/javascript" src="./src/slick/slick.min.js"></script>
 
     <script type="text/javascript">
