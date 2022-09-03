@@ -1,0 +1,122 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* reset styles */
+body * {
+    box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, div, ul {
+    margin: 0;
+    padding: 0; 
+    font-family: inherit; 
+} 
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+ul {
+    list-style: none;
+} 
+
+/* main styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    margin: 50px 0;
+}
+
+.container  {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.title_section {
+    padding-left: 15px;
+    border-bottom: 2px solid;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.html_title {
+    color: #1556FF; 
+} 
+
+.list_wrapper {
+    margin: 15px;
+    display: flex;
+    background: #F8F7FB;
+    box-shadow: 20px 20px 40px rgb(105 113 140 / 15%);
+    border-radius: 30px;
+}
+
+.list_wrapper:hover {
+    background: #FFFFFF;
+    box-shadow: rgb(24 27 34 / 15%) 20px 20px 40px;
+}
+
+.list_border {
+    width: 28px;
+    border-radius: 30px 0 0 30px;
+    box-shadow: inset -4px 4px 10px rgb(0 0 0 / 30%);
+}
+
+.html .list_border {
+    background: linear-gradient(180deg, #0047FF 0%, #326BFF 100%);
+}
+
+.list {
+    width: 100%;
+    margin: 15px;
+    padding: 0 25px;
+}
+
+.list_item {
+    margin: 15px;
+    list-style: url(../img/check.png);
+    transition: all 0.8s ease;
+}
+
+.list_item:hover { 
+    transform: translateX(15px); 
+    font-weight: 500;
+}
+
+.project_title {
+    color: #F5271E;
+}
+
+.html_js {
+    color: #FF9B03;
+}
+
+.js .list_border {
+    background: linear-gradient(180deg, #FFCC40 0%, #FF9900 100%);
+}
+
+.list_border--right {
+    width: 28px;
+    border-radius: 0 30px 30px 0;
+    box-shadow: inset 4px 4px 10px rgb(0 0 0 / 30%);
+}
+
+.project .list_border--right {
+    background: linear-gradient(180deg, #FC2117 100%, #FE5A53 0%);
+}
