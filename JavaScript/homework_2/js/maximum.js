@@ -18,10 +18,10 @@ if (summ && summ > 0) {
 // 2. Що повернуть вирази:
 
 //  2 && 0 && 3 
-console.log('2 && 0 && 3 = ' + Boolean(2 && 0 && 3)); // false
+console.log('2 && 0 && 3 = ' + (2 && 0 && 3)); // 0
 
 //  2 || 0 || 3 
-console.log('2 || 0 || 3 = ' + Boolean(2 || 0 || 3)); // true 
+console.log('2 || 0 || 3 = ' + (2 || 0 || 3)); // 2
 
 // 2 && 0 || 3
-console.log('2 && 0 || 3 = ' + Boolean(2 && 0 || 3)); // true
+console.log('2 && 0 || 3 = ' + (2 && 0 || 3)); // 3
