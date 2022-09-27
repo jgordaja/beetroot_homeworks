@@ -1,0 +1,231 @@
+@import 'vars';
+
+.game_main { 
+    font-family: 'Lato', sans-serif;
+    background-color: $bg; 
+    color: #FFFFFF;
+}
+
+.game_container {
+    max-width: 1000px;
+    width: 100%;
+    margin:  0 auto;
+    padding: 82px 0;
+}
+
+.game_bg { 
+    background: url('../img/bg-image.webp') no-repeat;
+    background-size: cover; 
+}
+
+.game_info {
+    padding: 154px 200px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 50px;
+    background-color: $bg; 
+}
+
+.tab_icon {
+    display: block;
+    padding-bottom: 15px;
+}
+
+.tab_name {
+    text-transform: uppercase;
+    color: #8D91A3;
+    transition: all 0.8s ease;
+} 
+
+#info_icon path,
+#spades_icon path,
+#bag_icon path,
+#star_icon  path {
+    transition: all 0.8s ease;
+} 
+
+.tab_item {
+    text-align: center; 
+    cursor: pointer; 
+
+    .tab_name { 
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    &:hover,
+    &.tab_item--active {
+    
+        .tab_icon { 
+            #info_icon path,
+            #spades_icon path {
+                stroke: white; 
+            }
+        
+            #bag_icon path {
+                fill: white; 
+            } 
+        }
+
+        .tab_name {
+            color: white; 
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.card {
+    padding: 60px 40px;
+    background-color: #212534;
+}
+
+.height {
+    height: 312px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.card_wrapper { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img_info__img {
+    position: relative;
+    width: 160px; 
+    margin-bottom: 25px;
+
+    &::before {
+        content: '';
+        display: block;
+        padding-top: 143.75%;
+    }
+
+    .img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+    }
+}
+
+.img_info__rating {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    .star_icon:hover,
+    .star_icon.star_icon--active {
+        cursor: pointer;
+
+        path {
+            fill: $gold;
+        } 
+    } 
+
+    .star_icon:not(.star_icon:last-of-type) {
+        margin-right: 10px;
+    }
+}
+
+.card__text_info {
+    max-width: 319px;
+    width: 100%;
+    position: relative;
+
+    .card_title {
+        font-size: 32px;
+        line-height: 32px; 
+        padding-bottom: 15px; 
+    }
+
+    .card__release_date {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
+
+    .card__description {
+        font-size: 14px;
+        line-height: 22px;
+        color: #B7BACD;
+        margin-bottom: 50px;
+        max-width: 277px;
+        width: 100%;
+    }
+
+    .card__to_buy {
+        display: flex;
+    }
+
+    .card__amount { 
+        margin-right: 50px;
+
+        .amount__discount {
+            display: block;
+            font-size: 12px;
+            line-height: 20px;
+            color: $gold;
+            margin-bottom: 4px;
+        }
+
+        .amount__price {
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+
+    .button__to_buy {
+        padding: 20px 30px;
+        background: #13E28D;
+        border-radius: 2px;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase; 
+        border: 1px solid #13E28D;
+        cursor: pointer;
+        transition: all 0.8s ease;
+
+        &:hover {
+            border: 1px solid #FFFFFF;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.score {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 83px;
+    height: 83px;
+    // border-radius: 50%;
+    // border: 3px solid #B7BACD;
+
+    .count {
+        font-size: 20px;
+        line-height: 22px;
+        color: #B7BACD; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        canvas { 
+            position: absolute;
+            top: -10px;
+            right: -10px;
+        }
+    }
+}
