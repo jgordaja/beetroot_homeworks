@@ -9,10 +9,6 @@ body.lock {
     overflow: hidden;
 }
 
-.header {
-    background-color: $brownLight;
-}
-
 .container {
     max-width: 1430px;
     width: 100%;
@@ -20,8 +16,10 @@ body.lock {
     padding: 0 15px;
 }
 
-.heder_container {
-    max-width: 1230px;
+.header_container {
+	background-color: $brownLight;
+    max-width: 1400px;
+	padding: 0 100px;
 }
 
 .nav_link {
@@ -311,7 +309,8 @@ body.lock {
 	}
 }
 
-.partners {
+.partners__container { 
+    max-width: 1400px;
 	background-color: $brownLight;
 	padding: 70px 40px;
 }
@@ -321,6 +320,9 @@ body.lock {
 }
 
 .partners__block{
+	max-width: 1186px;
+	width: 100%;
+	margin: 0 auto;
 
 	.partner__item {
 		display:block;
@@ -374,9 +376,15 @@ body.lock {
 }
 
 .footer {
-	color: $brownLight;
-	background-color: $brownDark;
-	padding: 70px 130px 20px 130px;
+
+	.footer__container {
+		color: $brownLight;
+		background-color: $brownDark;
+		padding: 70px 130px 20px 130px;
+		max-width: 1400px;
+		width: 100%;
+		margin: 0 auto;
+	}
 
 	.footer__logo, .logo_light { 
 		max-width: 150px;

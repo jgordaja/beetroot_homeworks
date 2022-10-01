@@ -96,10 +96,6 @@ body.lock {
   overflow: hidden;
 }
 
-.header {
-  background-color: #F8F1EA;
-}
-
 .container {
   max-width: 1430px;
   width: 100%;
@@ -107,8 +103,10 @@ body.lock {
   padding: 0 15px;
 }
 
-.heder_container {
-  max-width: 1230px;
+.header_container {
+  background-color: #F8F1EA;
+  max-width: 1400px;
+  padding: 0 100px;
 }
 
 .nav_link {
@@ -408,7 +406,8 @@ body.lock {
   border: 2px solid #F16A50;
 }
 
-.partners {
+.partners__container {
+  max-width: 1400px;
   background-color: #F8F1EA;
   padding: 70px 40px;
 }
@@ -417,6 +416,11 @@ body.lock {
   margin-bottom: 40px;
 }
 
+.partners__block {
+  max-width: 1186px;
+  width: 100%;
+  margin: 0 auto;
+}
 .partners__block .partner__item {
   display: block;
   height: 70px;
@@ -467,10 +471,13 @@ body.lock {
   max-height: 30px;
 }
 
-.footer {
+.footer .footer__container {
   color: #F8F1EA;
   background-color: #35312D;
   padding: 70px 130px 20px 130px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
 }
 .footer .footer__logo, .footer .logo_light {
   max-width: 150px;
@@ -656,6 +663,11 @@ body.lock {
     margin-right: 12px;
   }
 }
+@media screen and (max-width: 1000px) {
+  .header_container {
+    padding: 0 15px;
+  }
+}
 @media screen and (max-width: 900px) {
   .header__menu .menu__item {
     padding: 20px 15px;
@@ -702,7 +714,7 @@ body.lock {
   .prodacts__card {
     margin: 0 7.5px;
   }
-  .footer {
+  .footer .footer__container {
     padding: 50px 55px 20px 20px;
   }
   .footer .footer__nav {
@@ -752,7 +764,7 @@ body.lock {
   .prodacts .prodacts__cards {
     margin-bottom: 40px;
   }
-  .footer {
+  .footer .footer__container {
     padding: 120px 10px 30px 10px;
     position: relative;
   }
@@ -778,7 +790,7 @@ body.lock {
   }
 }
 @media screen and (max-width: 767px) {
-  .header {
+  .header_container {
     padding: 15px;
   }
   .header__nav .menu {
@@ -842,7 +854,7 @@ body.lock {
   }
 }
 @media screen and (max-width: 450px) {
-  .header {
+  .header_container {
     padding: 20px 10px;
   }
   .header__logo, .logo {
