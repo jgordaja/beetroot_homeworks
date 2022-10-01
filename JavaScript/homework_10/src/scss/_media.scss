@@ -1,0 +1,224 @@
+@import 'vars';
+
+@media screen and (max-width: 900px) {
+    .header__menu {
+        .menu__item {
+            padding: 20px 15px;
+            @include font(500, 16px, 19.5px);
+        }
+    }
+
+    .header__logo, .logo { 
+        max-width: 168px; 
+        max-height: 31px;
+    }
+
+    .search_button, 
+    .profile_button {
+        max-width: 27px; 
+    }
+
+    .search_icon {
+        max-width: 27px; 
+        max-height: 27px;
+    }
+
+    .search_icon {
+        max-width: 27px; 
+        max-height: 27px;
+    }
+
+    .icons_panel .search_button {
+        margin-right: 20px;
+    }
+
+    .first_screen__content_block { 
+        top: 60px;
+        right: 82px; 
+        
+        .first_screen__title {
+            @include font(700, 26px, 32px); 
+            max-width: 210px; 
+            margin-bottom: 20px;
+        }
+    }
+
+    .view_more__btn {
+        padding: 10px 26.5px; 
+        @include font(500, 16px, 20px); 
+    }
+
+    .prodacts__card {
+        margin: 0 7.5px; 
+    } 
+
+    .footer {
+        padding: 50px 55px 20px 20px; 
+    
+        .footer__nav { 
+            margin-bottom: 40px;
+        }
+    
+        .nav { 
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 350px;
+            width: 100%
+        }
+    
+        .footer__menu { 
+            .menu__item {
+                @include font(500, 16px, 20px);
+            }
+        }
+    
+        .contacts {
+            @include font(500, 20px, 24px);
+    
+            .contacts__title {
+                margin-bottom: 25px;
+            }
+    
+            .socials { 
+                margin-bottom: 20px;
+            }
+    
+            .social_item { 
+                font-size: 20px;
+    
+                &:not(.social_item:last-child) {
+                    margin-right: 35px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .first_screen__img_block::before { 
+        padding-top: 49.48%; 
+    }
+
+    .prodacts {
+        margin-bottom: 50px;
+
+        .prodacts__cards {
+            margin-bottom: 40px;
+        }
+    }
+
+    .footer { 
+        padding: 120px 10px 30px 10px;
+        position: relative;
+    
+        .footer__logo {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .footer__nav {
+            margin-bottom: 50px;
+        }
+    
+        .nav { 
+            max-width: none; 
+        }
+
+        .contacts {
+            text-align: right;
+
+            .socials { 
+                margin-bottom: 25px;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        padding: 15px;
+    }
+
+    .header__nav .menu { 
+        transform: translateX(100%);
+        overflow: auto;
+        position: fixed;
+        justify-content: center;
+        flex-direction: column; 
+        align-items: center; 
+        background-color: $brownLight;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%; 
+        padding: 20px;
+        box-sizing: border-box; 
+        z-index: 1;
+        @include transition(0.8s);
+        
+        &.active { 
+            transform: translateX(0);
+        }
+
+        .menu__item {
+            margin: 0;
+            padding: 15px 0;
+            width: 100%;
+            text-align: center;
+
+            &:hover {
+                background-color: $tomatoLight;
+            }
+        }
+
+        .menu__link { 
+            @include font(500, 18px, 22px); 
+        }
+    } 
+
+    .header__burger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .prodacts {
+        margin-bottom: 50px;
+
+        .prodacts__cards {
+            margin-bottom: 72px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        padding: 20px 10px;
+    }
+
+    .header__logo, .logo{ 
+        max-width: 100px; 
+        max-height: 19px;
+    }
+
+    .search_button, 
+    .profile_button {
+        max-width: 20px; 
+    }
+
+    .icons_panel .search_button {
+        margin-right: 15px;
+    }
+
+    .first_screen__img_block::before { 
+        padding-top: 120%; 
+    }
+
+    .first_screen__content_block { 
+        top: 60px;
+        right: 11px;
+    }
+}

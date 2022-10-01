@@ -1,0 +1,23 @@
+$black: #000000;
+$brownDark: #35312D;
+$arrowInactive: #202020;
+$tomato: #C62100;
+$tomatoLight: #F16A50;
+$brownLight: #F8F1EA;
+$dotInactive: rgba(248, 241, 234, 0.7);
+$darkDotInactive: #CAC2BA;
+
+@mixin transition($time) {
+	transition: all $time ease;
+}
+
+@mixin font($fw, $fs, $lh) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh; 
+}
+
+%flex {
+    display: flex;
+    justify-content: space-between; 
+} 

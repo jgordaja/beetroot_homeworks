@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slick Slider + Adaptive + Adaptive Graphics</title>
+    <!-- slick-theme.min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slick.min.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./src/css/index.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header_container">
+            <nav class="header__nav">
+                <a class="nav_link header__logo" href="#">
+                    <svg class="logo">
+                        <use xlink:href="./src/img/base/sprite.svg#logo"></use>
+                    </svg> 
+                </a>
+                <ul id="menu" class="header__menu menu">
+                    <li class="menu__item active">
+                        <a class="menu__link" href="#home">
+                            home
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#catalog">
+                            catalog
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#news">
+                            news
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contacts">
+                            contacts
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav__panel">
+                    <div class="icons_panel">
+                        <a class="nav_link search_button" href="#"> 
+                            <svg class="search_icon">
+                                <use xlink:href="./src/img/base/sprite.svg#search_icon"></use>
+                            </svg>
+                        </a>
+                        <a class="nav_link profile_button" href="#">
+                            <img class="profile_icon" src="./src/img/base/profile-icon.svg" alt="profile button">
+                            <!-- глючений svg -->
+                            <!-- <svg class="profile_icon">
+                                <use xlink:href="./src/img/base/sprite.svg#profile_icon"></use>
+                            </svg> -->
+                        </a>
+                    </div>
+                    <div id="burger" class="header__burger burger">
+                        <span class="burger__lines"> 
+                        </span>
+                    </div>
+                </div> 
+            </nav>
+        </div>
+    </header>
+    <main id="#home" class="main">
+        <section class="first_screen">
+            <div id="first_screen" class="container first_screen__container"> 
+                <div class="first_screen_slide">
+                    <div class="first_screen__img_block">
+                        <picture class="picture first_screen__img"> 
+                            <source 
+                                media="(max-width: 450px)" 
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                data-srcset="./src/img/header_slider/320/slide_1.webp, ./src/img/header_slider/320/slide_1_2x.webp 2x"
+                                type="image/webp"
+                            >
+                            <source 
+                                media="(max-width: 450px)"
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                                data-srcset="./src/img/header_slider/320/slide_1.jpg, ./src/img/header_slider/320/slide_1_2x.jpg 2x"
+                                type="image/jpeg"
+                            >
+                            <source 
+                                media="(max-width: 768px)" 
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                data-srcset="./src/img/header_slider/768/slide_1.webp, ./src/img/header_slider/768/slide_1_2x.webp 2x"
+                                type="image/webp"
+                            >
+                            <source 
+                                media="(max-width: 768px)"
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                                data-srcset="./src/img/header_slider/768/slide_1.jpg, ./src/img/header_slider/768/slide_1_2x.jpg 2x"
+                                type="image/jpeg"
+                            >
+                            <source 
+                                media="(max-width: 1280px)" 
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                data-srcset="./src/img/header_slider/1280/slide_1.webp, ./src/img/header_slider/1280/slide_1_2x.webp 2x"
+                                type="image/webp"
+                            >
+                            <source 
+                                media="(max-width: 1280px)"
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                                data-srcset="./src/img/header_slider/1280/slide_1.jpg, ./src/img/header_slider/1280/slide_1_2x.jpg 2x"
+                                type="image/jpeg"
+                            >
+                            <img class="lazy" 
+                                src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                                data-src="./src/img/header_slider/1280/slide_1.webp" alt="guitar photo">
+                        </picture>
+                    </div> 
+                    <div class="first_screen__content_block">
+                        <h2 class="first_screen__title">
+                            discover new options 
+                        </h2>
+                        <a class="view_more__btn" href="#">
+                            View more
+                        </a>
+                    </div>
+                </div> 
+                <div class="first_screen_slide">
+                    <div class="first_screen__img_block">
+                        <picture class="picture first_screen__img"> 
+                            <source 
+                                media="(max-width: 450px)" 
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                data-srcset="./src/img/header_slider/320/slide_1.webp, ./src/img/header_slider/320/slide_1_2x.webp 2x"
+                                type="image/webp"
+                            >
+                            <source 
+                                media="(max-width: 450px)"
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                                data-srcset="./src/img/header_slider/320/slide_1.jpg, ./src/img/header_slider/320/slide_1_2x.jpg 2x"
+                                type="image/jpeg"
+                            >
+                            <source 
+                                media="(max-width: 768px)" 
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                data-srcset="./src/img/header_slider/768/slide_1.webp, ./src/img/header_slider/768/slide_1_2x.webp 2x"
+                                type="image/webp"
+                            >
+                            <source 
+                                media="(max-width: 768px)"
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                                data-srcset="./src/img/header_slider/768/slide_1.jpg, ./src/img/header_slider/768/slide_1_2x.jpg 2x"
+                                type="image/jpeg"
+                            >
+                            <source 
+                                media="(max-width: 1280px)" 
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                data-srcset="./src/img/header_slider/1280/slide_2.webp, ./src/img/header_slider/1280/slide_2_2x.webp 2x"
+                                type="image/webp"
+                            >
+                            <source 
+                                media="(max-width: 1280px)"
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                                data-srcset="./src/img/header_slider/1280/slide_2.jpg, ./src/img/header_slider/1280/slide_2_2x.jpg 2x"
+                                type="image/jpeg"
+                            >
+                            <img class="lazy" 
+                                src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                                data-src="./src/img/header_slider/1280/slide_2.webp" alt="guitar photo">
+                        </picture>
+                    </div> 
+                    <div class="first_screen__content_block">
+                        <h2 class="first_screen__title">
+                            expand your horizons 
+                        </h2>
+                        <a class="first_screen__btn" href="#">
+                            View more
+                        </a>
+                    </div>
+                </div> 
+                <div class="first_screen_slide">
+                    <div class="first_screen__img_block">
+                        <picture class="picture first_screen__img"> 
+                            <source 
+                                media="(max-width: 450px)" 
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                data-srcset="./src/img/header_slider/320/slide_1.webp, ./src/img/header_slider/320/slide_1_2x.webp 2x"
+                                type="image/webp"
+                            >
+                            <source 
+                                media="(max-width: 450px)"
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                                data-srcset="./src/img/header_slider/320/slide_1.jpg, ./src/img/header_slider/320/slide_1_2x.jpg 2x"
+                                type="image/jpeg"
+                            >
+                            <source 
+                                media="(max-width: 768px)" 
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                data-srcset="./src/img/header_slider/768/slide_1.webp, ./src/img/header_slider/768/slide_1_2x.webp 2x"
+                                type="image/webp"
+                            >
+                            <source 
+                                media="(max-width: 768px)"
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                                data-srcset="./src/img/header_slider/768/slide_1.jpg, ./src/img/header_slider/768/slide_1_2x.jpg 2x"
+                                type="image/jpeg"
+                            >
+                            <source 
+                                media="(max-width: 1280px)" 
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                                data-srcset="./src/img/header_slider/1280/slide_3.webp, ./src/img/header_slider/1280/slide_3_2x.webp 2x"
+                                type="image/webp"
+                            >
+                            <source 
+                                media="(max-width: 1280px)"
+                                srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                                data-srcset="./src/img/header_slider/1280/slide_3.jpg, ./src/img/header_slider/1280/slide_3_2x.jpg 2x"
+                                type="image/jpeg"
+                            >
+                            <img class="lazy" 
+                                src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" 
+                                data-src="./src/img/header_slider/1280/slide_3.webp" alt="guitar photo">
+                        </picture>
+                    </div> 
+                    <div class="first_screen__content_block">
+                        <h2 class="first_screen__title">
+                            Find your own style
+                        </h2>
+                        <a class="first_screen__btn" href="#">
+                            View more
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </section> 
+        <section class="prodacts">
+            <div class="container prodacts__container">
+                <h3 class="title prodacts__title">
+                    new arrivals
+                </h3>
+                <div class="prodacts__cards">
+                    <a class="prodacts__card" href="#">
+                        <span class="status in_stock">
+                            in stock
+                        </span>
+                        <div class="img_wrapper">
+                            <img class="picture" src="./src/img/products/product_1.webp" alt="guitar">
+                        </div>
+                        <p class="product__description">
+                            Hagstrom Alvar Limited Edition
+                        </p>
+                        <div class="product__price">
+                            €2.990,00
+                        </div>
+                    </a>
+                    <a class="prodacts__card" href="#">
+                        <span class="status in_stock">
+                            in stock
+                        </span>
+                        <div class="img_wrapper">
+                            <img class="picture" src="./src/img/products/product_2.webp" alt="guitar">
+                        </div>
+                        <p class="product__description">
+                            Hagstrom Tremar Viking Deluxe Cloudy Seas
+                        </p>
+                        <div class="product__price">
+                            €1.300,00
+                        </div>
+                    </a>
+                    <a class="prodacts__card" href="#">
+                        <span class="status sold">
+                            sold
+                        </span>
+                        <div class="img_wrapper">
+                            <img class="picture" src="./src/img/products/product_3.webp" alt="guitar">
+                        </div>
+                        <p class="product__description">
+                            Gibson Les Paul Standard 60s
+                        </p>
+                        <div class="product__price">
+                            €3.749,00   
+                        </div>
+                    </a>
+                    <a class="prodacts__card" href="#">
+                        <span class="status in_stock">
+                            in stock
+                        </span>
+                        <div class="img_wrapper">
+                            <img class="picture" src="./src/img/products/product_4.webp" alt="guitar">
+                        </div>
+                        <p class="product__description">
+                            Suhr Standard Plus Trans Blue Denim
+                        </p>
+                        <div class="product__price">
+                            €3.449,00
+                        </div>
+                    </a>
+                    <a class="prodacts__card" href="#">
+                        <span class="status in_stock">
+                            in stock
+                        </span>
+                        <div class="img_wrapper">
+                            <img class="picture" src="./src/img/products/product_5.webp" alt="guitar">
+                        </div>
+                        <p class="product__description">
+                            Fender Telecaster Black Paisley Limited Edition
+                        </p>
+                        <div class="product__price">
+                            €1.499,00
+                        </div>
+                    </a>
+                    <a class="prodacts__card" href="#">
+                        <span class="status in_stock">
+                            in stock
+                        </span>
+                        <div class="img_wrapper">
+                            <img class="picture" src="./src/img/products/product_2.webp" alt="guitar">
+                        </div>
+                        <p class="product__description">
+                            Hagstrom Tremar Viking Deluxe Cloudy Seas
+                        </p>
+                        <div class="product__price">
+                            €1.300,00
+                        </div>
+                    </a>
+                    <a class="prodacts__card" href="#">
+                        <span class="status sold">
+                            sold
+                        </span>
+                        <div class="img_wrapper">
+                            <img class="picture" src="./src/img/products/product_3.webp" alt="guitar">
+                        </div>
+                        <p class="product__description">
+                            Gibson Les Paul Standard 60s
+                        </p>
+                        <div class="product__price">
+                            €3.749,00   
+                        </div>
+                    </a>
+                </div>
+                <a class="view_more__btn" href="#">
+                    View more
+                </a>
+            </div>
+        </section>
+        <section class="partners">
+            <div class="container partners__container">
+                <h3 class="title partners__title">
+                    our partners
+                </h3>
+                <div class="partners__block"> 
+                    <a class="partner__item" href="#"> 
+                        <svg class="partner_logo epiphone">
+                            <use xlink:href="./src/img/base/sprite.svg#epiphone"></use>
+                        </svg>
+                    </a> 
+                    <a class="partner__item" href="#">
+                        <svg class="partner_logo esp">
+                            <use xlink:href="./src/img/base/sprite.svg#esp"></use>
+                        </svg>
+                    </a> 
+                    <a class="partner__item" href="#">
+                        <svg class="partner_logo gibson">
+                            <use xlink:href="./src/img/base/sprite.svg#gibson"></use>
+                        </svg>
+                    </a>
+                    <a class="partner__item" href="#">
+                        <svg class="partner_logo engl">
+                            <use xlink:href="./src/img/base/sprite.svg#engl"></use>
+                        </svg>
+                    </a>
+                    <a class="partner__item" href="#">
+                        <svg class="partner_logo roland">
+                            <use xlink:href="./src/img/base/sprite.svg#roland"></use>
+                        </svg>
+                    </a>
+                    <a class="partner__item" href="#">
+                        <svg class="partner_logo fender">
+                            <use xlink:href="./src/img/base/sprite.svg#fender"></use>
+                        </svg>
+                    </a>
+                    <a class="partner__item" href="#">
+                        <svg class="partner_logo peavey">
+                            <use xlink:href="./src/img/base/sprite.svg#peavey"></use>
+                        </svg>
+                    </a>
+                    <a class="partner__item" href="#">
+                        <svg class="partner_logo marshal">
+                            <use xlink:href="./src/img/base/sprite.svg#marshal"></use>
+                        </svg>
+                    </a>
+                    <a class="partner__item" href="#">
+                        <svg class="partner_logo orange">
+                            <use xlink:href="./src/img/base/sprite.svg#orange"></use>
+                        </svg>
+                    </a> 
+                    <a class="partner__item" href="#"> 
+                        <svg class="partner_logo epiphone">
+                            <use xlink:href="./src/img/base/sprite.svg#epiphone"></use>
+                        </svg>
+                    </a> 
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer__nav">
+            <div class="nav">
+                <a class="nav_link footer__logo" href="#">
+                    <svg class="logo_light">
+                        <use xlink:href="./src/img/base/sprite.svg#logo_light"></use>
+                    </svg> 
+                </a>
+                <ul class="footer__menu menu">
+                    <li class="menu__item active">
+                        <a class="menu__link" href="#home">
+                            home
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#catalog">
+                            catalog
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#news">
+                            news
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#contacts">
+                            contacts
+                        </a>
+                    </li>
+                </ul> 
+            </div>
+            <div class="contacts">
+                <p class="contacts__title">
+                    Contact Us
+                </p>
+                <ul class="socials">
+                    <li class="social_item">
+                        <a href="#">
+                            <span class="icon-instagram"></span>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="#">
+                            <span class="icon-facebook-f"></span>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="#">
+                            <span class="icon-pinterest-p"></span>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="#">
+                            <span class="icon-twitter"></span>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="#">
+                            <span class="icon-youtube-play"></span>
+                        </a>
+                    </li>
+                </ul>
+                <a class="tel" href="tel:08003004040">0800 300 4040</a>
+            </div>
+        </nav>
+        <div class="copy">
+            © Copyright 2022. All rights reserved.
+        </div>
+    </footer> 
+    
+    <!-- jQuery --> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+    <!-- main menu-burger -->
+    <script src="./src/js/menu_burger.js"></script>
+    <!-- slick slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- slick slider initialize and settings-->
+    <script src="./src/js/slick_initialize.js"></script> 
+    <!-- vanilla-lazyload - ліниве завантаження зображень -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script> 
+    <script>
+        let lazyLoadInstance = new LazyLoad(); 
+    </script>
+</body>
+</html>

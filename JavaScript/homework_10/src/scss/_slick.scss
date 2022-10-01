@@ -1,0 +1,132 @@
+@import 'vars';
+
+.slick-dots {
+    bottom: 50px; 
+    z-index: 1;
+
+    li {
+        margin: 0; 
+
+        button {
+            border-radius: 50%;
+            background-color: $dotInactive;
+            color: $dotInactive;
+
+            &::before {
+                content: '';
+            }
+        }
+    }
+
+    li.slick-active  button { 
+        background-color: $tomatoLight;
+        color: $tomatoLight; 
+    }
+
+    li:not(li:last-child) {
+        margin-right: 30px;
+    }
+}
+
+// зробити однакову висоту слайдів
+.prodacts, .partners__block {
+    .slick-slider .slick-list, 
+    .slick-slider .slick-track {
+        display: flex;
+    }
+
+    .slick-dots {
+        bottom: -40px; 
+    }
+
+    .slick-dotted.slick-slider {
+        margin-bottom: 72px;
+    }
+}
+
+.arrow {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    padding: 0;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    .next, .prev {
+        font-size: 74px;
+        @include transition(0.9s);
+        // width: 40px;
+        // height: 74px; 
+
+        &:hover {
+            color: $tomatoLight;
+        }
+    }
+}
+
+.next_arrow { 
+    right: -35px; 
+}
+
+.prev_arrow {
+    left: -35px
+}
+
+.prodacts, .partners {
+    .slick-dots {
+        li button { 
+            background-color: $darkDotInactive;
+            color: $darkDotInactive; 
+        }
+
+        li.slick-active  button { 
+            background-color: $tomatoLight;
+            color: $tomatoLight; 
+        }
+    }
+}
+
+@media screen and (max-width: 1284px) {
+    .arrow {
+        .next, .prev {
+            font-size: 30px;
+            // width: 16px;
+            // height: 30px; 
+        }
+    }
+
+    .next_arrow { 
+        right: -20px; 
+    }
+    
+    .prev_arrow {
+        left: -20px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slick-dots {
+        bottom: 20px; 
+
+        li {
+            margin: 0; 
+    
+            button {
+                width: 12px;
+                height: 12px;
+            }
+        }
+    
+        li:not(li:last-child) {
+            margin-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .slick-dots li:not(li:last-child) {
+        margin-right: 12px; 
+    }
+}
