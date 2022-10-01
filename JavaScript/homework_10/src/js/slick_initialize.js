@@ -3,6 +3,10 @@ $(document).ready(function() {
         infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        fade: true,
+        cssEase: 'linear',
         adaptiveHeight: true,
         accessibility: true,
         arrows: false,
@@ -13,9 +17,11 @@ $(document).ready(function() {
 
     $('.prodacts__cards').slick({
         lazyLoad: true,
-        infinite: false,
+        infinite: true,
         slidesToShow: 5,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
+        autoplay: true,
+        autoplaySpeed: 3000,
         adaptiveHeight: true,
         accessibility: true,
         arrows: true, 
@@ -77,9 +83,9 @@ $(document).ready(function() {
     });
 
     $('.partners__block').slick({ 
-        infinite: true,
+        infinite: false,
         slidesToShow: 9,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         adaptiveHeight: true,
         accessibility: true,
         arrows: true, 
