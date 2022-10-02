@@ -1,7 +1,7 @@
 // apikey=88150c8c
 const url = 'http://www.omdbapi.com/?apikey=88150c8c';
 
-const cardUrl = '../parts/card.html';
+const cardUrl = './parts/card.html';
 let card; 
 let cardBlock;
 
