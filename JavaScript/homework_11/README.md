@@ -22,4 +22,10 @@
 
 ### Сайт опубліковано за адресою
 
-https://jgordaja.github.io/beetroot_homeworks/JavaScript/homework_11/
+https://jgordaja.github.io/beetroot_homeworks/JavaScript/homework_11/ 
+
+### !!! Але github блокує запити на http://www.omdbapi.com/ :
+
+## This request has been blocked; the content must be served over HTTPS.
+
+Тому краще скопіювати репозиторій і запускати локально...
