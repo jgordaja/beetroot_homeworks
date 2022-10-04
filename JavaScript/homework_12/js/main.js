@@ -1,12 +1,12 @@
 const homeIcon = L.icon({
-    iconUrl: '../img/home.svg', 
+    iconUrl: './img/home.svg', 
     iconSize:     [38, 95], // size of the icon 
     iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location 
     popupAnchor:  [-3, -76], // point from which the popup should open relative to the iconAnchor 
 });
 
 const heartIcon = L.icon({
-    iconUrl: '../img/heart.svg', 
+    iconUrl: './img/heart.svg', 
     iconSize:     [38, 95],
     iconAnchor:   [22, 94],
     popupAnchor:  [-3, -76], 
@@ -56,7 +56,7 @@ map.on('click', onMapClick);
 let pointInPark = L.marker([48.747559, 37.586519], {icon: heartIcon}) 
     .addTo(map);
 
-const photoInParkUrl = '../img/photo1.jpg';
+const photoInParkUrl = './img/photo1.jpg';
 const photoInParkBounds = [[48.747559, 37.586519], [48.737682, 37.609666]]; 
 
 const photoInPark = L.imageOverlay(photoInParkUrl, photoInParkBounds, {interactive: true}); 
@@ -74,7 +74,7 @@ pointInPark.on('mouseover', function() {
 let pointHome = L.marker([48.750799, 37.596767], {icon: heartIcon}) 
     .addTo(map);
 
-const photoNearHoseUrl = '../img/photo2.jpg';
+const photoNearHoseUrl = './img/photo2.jpg';
 const photoNearHoseBounds = [[48.750799, 37.596767], [48.743795, 37.614628]]; 
 
 const photoNearHose = L.imageOverlay(photoNearHoseUrl, photoNearHoseBounds, {interactive: true}); 
@@ -92,7 +92,7 @@ pointHome.on('mouseover', function() {
 let pointSchool = L.marker([48.745054, 37.595408], {icon: heartIcon}) 
     .addTo(map);
 
-const photoSchoolUrl = '../img/photo3.jpg';
+const photoSchoolUrl = './img/photo3.jpg';
 const photoSchoolBounds = [[48.745054, 37.595408], [48.738814, 37.608733]]; 
 
 const photoSchool = L.imageOverlay(photoSchoolUrl, photoSchoolBounds, {interactive: true}); 
