@@ -120,3 +120,11 @@ body {
 .project .list_border--right {
     background: linear-gradient(180deg, #FC2117 100%, #FE5A53 0%);
 }
+
+.vue_js {
+    color: #337e33
+}
+
+.vuejs .list_border {
+    background: linear-gradient(180deg, #30a530 0%, #174717 100%);
+}
